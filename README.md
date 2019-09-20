@@ -1,8 +1,8 @@
 # draft website (SKOS frontend)
 Website to browse Linked Data vocabularies (HTML, JQuery) for SKOS/RDF thesauri as an implementation of the GBA vocabularies.
-This website provides a semantic navigation, view and search of SKOS concepts. It is a first draft to relaunch the official GBA Thesaurus website (https://resource.geolba.ac.at) in 2019. 
-* NEW Demo: https://resource.geolba.net
-* mp4 (IPad screen cast): https://bit.ly/2SAOag6
+This website provides a semantic navigation, view and search of SKOS concepts. It is a draft to relaunch the official GBA Thesaurus website (https://resource.geolba.ac.at) in 2019. 
+* NEW Demo: https://schmar00.github.io/gba-thesaurus/
+* mp4 (old IPad screen cast): https://bit.ly/2SAOag6
 
 ## Deployment
 
