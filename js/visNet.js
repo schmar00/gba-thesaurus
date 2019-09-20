@@ -354,7 +354,7 @@ var visNet = {
         });*/
         network.on("click", function (params) {
             //console.log('doubleClick Event:', params);
-            var uri = params.nodes[0];
+            var uri = params.nodes[0].replace('http://', 'https://');
             if (visNet.currentUri != uri) {
                 //visNet.nodesArr = [];
                 if (visNet.extGraph(params.nodes[0]))
