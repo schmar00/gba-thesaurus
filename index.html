@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Thesaurus | Geologische Bundesanstalt</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icon.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icon.png" />
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css">
+    <link rel="stylesheet" href="css/FontAwesome/all.min.css" />
+    <link rel="stylesheet" href="css/site.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.3.0/fuse.min.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js/ws.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/page.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/detail.js"></script>
+    <script>
+        if (typeof page == 'undefined' || window.navigator.userAgent.indexOf('MSIE ') > 0 || window.navigator.userAgent.indexOf('Trident/') > 0) {
+            document.execCommand('Stop');
+            document.body = document.createElement("body");
+
+            function gup(name, url) {
+                if (!url) url = location.href;
+                name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+                var regexS = "[\\?&]" + name + "=([^&#]*)";
+                var regex = new RegExp(regexS);
+                var results = regex.exec(url);
+                return results == null ? null : results[1];
+            }
+
+            var html = '<div class="alert alert-dismissible alert-warning">' +
+                '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                '<h4 class="alert-heading">GBA Thesaurus</h4>' +
+                '<p class="mb-0">[Deutsch]<br>' +
+                'Die Website des GBA Thesaurus wurde f&uuml;r die Browser Firefox, Chrome, Safari oder MS Edge optimiert bzw. modernisiert und unterst&uuml;tzt nicht mehr die Darstellung im MS Internet Explorer 11 oder &auml;lter.' +
+                '<br><br>' +
+                '[English]<br>The GBA Thesaurus website is optimized for browsers Firefox, Chrome, Safari or MS Edge. - MS Internet Explorer 11 or older is not supported any more.' +
+                '</p></div>';
+                
+
+            let uri = gup('uri', window.location.href);
+            if (uri) {
+                uri = decodeURIComponent(uri);
+                html += '<a style="margin: 15px;" href="javascript: document.getElementById(\'irdfForm\').submit();" >Download RDF ['+uri+']</a ><form id="irdfForm" target="_blank" style="display: none; " method="post" action="https://resource.geolba.ac.at/PoolParty/sparql/GeologicTimeScale"><input type="hidden" name="query" id="irdfQuery" value="describe <' + uri + '>" /></form>';
+            }
+            document.body.innerHTML = html;
+
+        } else {
+            $(document).ready(function () {
+                page.init();
+            });
+        }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navBar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a id="LINK_GBALOGO" href="https://www.geologie.ac.at"><img alt="GBA Thesaurus" id="IMG_GBALOGO" src="img/gbaLogo50.png" height="35"></a>
+            <button id="navbarToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:location.replace(page.BASE + '?lang=' + lang.ID);">
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html?uri=http://resource.geolba.ac.at/doc/52">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="feedback" href="javascript: page.openFeedBack();">Feedback</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown05">
+                            <a class="dropdown-item" href="javascript: page.setLang('de');">Deutsch</a>
+                            <a class="dropdown-item" href="javascript: page.setLang('en');">English</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+        <div id="contentRow1" class="row">
+            <div id="pageContent" class="col-lg-8">
+                <!-- Page description -->
+                <div id="page_desc"></div>
+                <hr>
+                <!-- Project descriptions -->
+                <div id="proj_desc"></div>
+                <hr>
+                <!-- other descriptions -->
+                <div id="other_desc"></div>
+                <br>
+            </div>
+            <!-- Sidebar Widgets Column -->
+            <div id="rightSidebar" class="col-lg-4">
+                <!-- Search Widget -->
+                <div id="search_widget" class="card my-4 text-white bg-info mb-3">
+                    <div id="searchCard" class="card-body">
+                        <svg version="1.1" id="rdfSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.891px" height="18.451px" viewBox="203.351 335.084 17.891 18.451">
+                            <path fill="#FFFFFF" d="M218.806,347.103c-0.737-0.34-0.907-1.587-0.963-2.608c-0.114-3.997,1.587-2.41,2.239-4.961
+                            c0.283-1.077-0.028-2.012-0.539-2.778c-0.766-1.077-1.672-1.049-2.268-1.275h-0.793c-0.34,0.142-0.68,0.17-1.077,0.368
+                            c-0.879,0.482-1.616,1.446-1.701,2.608c-0.028,0.51,0.085,0.851-0.142,1.276c-0.142,0.255-0.425,0.595-0.624,0.765
+                            c-3.571,2.977-4.025,0.454-6.378,1.077c-3.486,0.964-2.977,5.868,0.284,6.35c2.466,0.369,2.126-1.474,4.592-0.482
+                            c1.474,0.624,2.551,1.248,2.721,2.948c0.114,1.162,0.794,2.041,1.758,2.523c0.312,0.142,0.708,0.198,1.021,0.34h0.907
+                            c0.425-0.198,0.765-0.198,1.247-0.482C221.131,351.524,221.188,348.265,218.806,347.103z M206.646,342.851
+                            c0.482,1.502-0.539,1.049-0.964,1.219c-0.567,0.198-0.567,1.474-0.453,2.069c-1.531-2.211,1.304-5.074,3.458-3.657
+                            C207.524,342.34,207.496,342.595,206.646,342.851z M214.328,338.287c0.113-0.624,0.425-1.134,0.737-1.474
+                            c0.539-0.539,2.211-1.304,3.146-0.425c-1.219-0.198-1.19,0.114-2.069,0.369c0.482,1.247-0.312,1.134-0.992,1.162
+                            c-0.539,0.624-0.595,1.276-0.425,2.041C214.356,339.647,214.243,338.854,214.328,338.287z M213.477,347.301
+                            c-1.275-0.51-3.26-1.559-2.834-3.316c0.198-0.936,2.381-2.296,3.657-2.58c0.624-0.113,0.737,0,1.219,0.227
+                            c0.567,0.284,0.567,0.085,0.822,0.68c0.368,0.766,0.454,1.786,0.425,2.693c-0.057,0.878-0.227,1.729-0.963,2.154
+                            c-0.397,0.227-0.539,0.482-1.077,0.454C214.299,347.613,213.846,347.442,213.477,347.301z M216.708,348.095
+                            c0.595,1.36-0.793,1.049-1.021,1.162c-0.539,0.312-0.51,1.417-0.396,2.069c-0.766-1.191-0.51-2.353,0.368-3.231
+                            c1.559-1.56,2.977-0.425,3.203-0.369C218.041,347.471,217.361,347.669,216.708,348.095z" />
+                        </svg>
+                        <label for="searchInput" id="searchInputLabel">Suchen</label>
+                        <div id="searchGroup" class="input-group">
+                            <input id="searchInput" type="text" class="form-control" placeholder="Search for...">
+                            <div style="position: absolute; top: 39px;">
+                                <table id="dropdown" class="table table-hover"></table>
+                            </div>
+                            <span class="input-group-btn"><button id="searchBtn" class="btn btn-secondary" type="button">Go!</button></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Apps Card -->
+                <div class="card border-info mb-3" id="appsCard">
+                    <div class="card-header">apps</div>
+                    <div class="card-body">
+                        <div id="appsBody1"></div>
+                        <div id="appsBody2"></div>
+                    </div>
+                </div>
+                <!-- Side Widgets -->
+                <div id="proj_links"></div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    <!-- Footer -->
+    <footer id="pageFooter" class="py-5 bg-dark">
+        <div class="container">
+            <div style="display:inline;" class="m-0 text-center text-white">
+                <div id="shareButtons" style="display:inline;">
+                    <a id="fbShare" class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=wwwgeolbanet" target="_blank" rel="noopener" aria-label="">
+                        <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="twShare" class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=GBA%20Thesaurus&amp;url=wwwgeolbanet" target="_blank" rel="noopener" aria-label="">
+                        <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="liShare" style="margin-right:30px;" class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=wwwgeolbanet&amp;title=GBA%20Thesaurus&amp;summary=GBA%20Thesaurus&amp;source=wwwgeolbanet" target="_blank" rel="noopener" aria-label="">
+                        <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                &copy;
+                <script>
+                    document.write(new Date().getFullYear());
+
+                </script>
+                <a href="https://www.geologie.ac.at">GBA</a> |
+                <a id="license" href="https://creativecommons.org/licenses/by-sa/3.0/at/deed">license</a> |
+                <a id="contact" href="mailto:thesaurus@geologie.ac.at">contact</a> |
+                <a id="disclaimer" href="javascript:page.openParaLink('info=disclaimer');">disclaimer</a> |
+                <a href="https://achecker.ca/checker/index.php?uri=referer&gid=WCAG2-AA" title="WCAG 2.0 Compatible">WCAG 2-AA</a> |
+                <a href="index.html?uri=http://resource.geolba.ac.at/doc/54">FAQ</a>
+
+                <!--                <a style="float:right;" href="https://achecker.ca/checker/index.php?uri=referer&gid=WCAG2-AA" title="WCAG 2.0 Compatible">
+                    <img alt="WCAG Checker" src="https://achecker.ca/images/icon_W2_aa.jpg" alt="WCAG 2.0 (Level AA)" height="32" width="102" />
+                </a>-->
+            </div>
+            <div style="display:inline; float:right;">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

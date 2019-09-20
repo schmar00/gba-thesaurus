@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GBA Thesaurus | Node Description</title>
+    <link rel="stylesheet" href="https://visjs.github.io/vis-network/dist/vis-network.min.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css" />
+
+    <style type="text/css">
+        html {
+            height: 100%;
+            margin: 0px;
+        }
+
+        body {
+            height: 90%;
+            margin: 0px;
+        }
+    </style>
+    <script>
+        function redir() {
+            window.open(parent.document.getElementById("externalUri").value, "visnet_desc");
+        }
+        function onload() {
+            document.getElementById("uri").innerText = parent.document.getElementById("externalUri").value;
+        }
+    </script>
+</head>
+<body onload="onload();">
+    <div class="container-fluid" style="height:100%;vertical-align:central;text-align:center;">
+        <div style="position:absolute;top: 50%;width:90%;text-align:center;">
+            <h3>
+                <a href="#" onclick="redir();">Show node description in new tab</a>
+            </h3>
+            <h5 id="uri"></h5>
+        </div>
+    </div>
+</body>
+
+</html>
