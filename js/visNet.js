@@ -196,7 +196,7 @@ var visNet = {
         BGS: 'http://data.bgs.ac.uk/id/EarthMaterialClass/',
         WIKIDATA: 'http://www.wikidata.org/entity/',
         GEMET: 'http://www.eionet.europa.eu/gemet/',
-        GBA: 'resource.geolba.ac.at'
+        GBA: 'http://resource.geolba.ac.at'
     },
     isExternal: function (uri) {
         return !uri.includes(visNet.abbrev.GBA);
