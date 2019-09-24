@@ -405,7 +405,7 @@ var detail = {
             $('#appsBody2').append(`
                 <div class="apps thumbNail">
                     <a href="${link}">
-                        <img alt="${text1}" src="${this.imgPng(link)}" class="img-thumbnail" alt="Image" title="Image" onerror="$(this).remove();" style="width:75px; height:75px; overflow:hidden;">
+                        <img alt="${text1}" src="${this.imgPng(link.replace('http:', 'https:'))}" class="img-thumbnail" alt="Image" title="Image" onerror="$(this).remove();" style="width:75px; height:75px; overflow:hidden;">
                     </a>
                 </div>`);
         } else if (glyphicon == '') {
@@ -429,7 +429,7 @@ var detail = {
 
     imgPng: function (url) {
         if (url.search('geologie.ac.at') > -1) {
-            let a = url.replace('http:', 'https:').split('.');
+            let a = url.split('.');
             a.pop();
             url = a.join('.') + '.png';
         }
