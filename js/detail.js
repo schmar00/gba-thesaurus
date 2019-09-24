@@ -27,7 +27,7 @@ const Uri = {
     RELATIONS_3: [BaseUri.rdfs + 'seeAlso', BaseUri.owl + 'sameAs', BaseUri.dcterms + 'relation', BaseUri.dcterms + 'hasPart', BaseUri.dcterms + 'isPartOf', BaseUri.dcterms + 'conformsTo'],
     DATA_LINKS: [BaseUri.dcterms + 'source', BaseUri.dcterms + 'isReferencedBy', BaseUri.dcterms + 'subject', BaseUri.dcterms + 'isRequiredBy', BaseUri.dcterms + 'identifier'],
     VISUALIZATION: [BaseUri.dbpo + 'colourHexCode'],
-    LOCATION: [BaseUri.geo + 'lat', BaseUri.geo + 'long', BaseUri.geo + 'location', BaseUri.dcterms + 'spatial'],
+    LOCATION: [BaseUri.skos + 'example', BaseUri.geo + 'lat', BaseUri.geo + 'long', BaseUri.geo + 'location', BaseUri.dcterms + 'spatial'],
     CREATOR: [BaseUri.dcterms + 'creator', BaseUri.dcterms + 'created', BaseUri.dcterms + 'modified', BaseUri.dcterms + 'contributor']
 }
 
@@ -258,15 +258,16 @@ var detail = {
         refArr = '<' + refArr.join('> <') + '>';
         let AT = page.isEmbedded ? "target=\"_blank\" " : "";
 
-        let query = `SELECT DISTINCT ?Citation ?DSN ?PDF
-                                    WHERE {
-                                    VALUES ?r {${refArr}}
-                                    ?r <http://www.w3.org/2004/02/skos/core#definition> ?Citation . 
-                                    OPTIONAL {?r <http://resource.geolba.ac.at/schema/GBA/DNS> ?dsn}
-                                    BIND (IF(exists{?r <http://resource.geolba.ac.at/schema/GBA/DNS> ?dsn} , ?dsn, "") AS ?DSN)
-                                    OPTIONAL {?r <http://resource.geolba.ac.at/schema/GBA/PDF_download> ?pdf} 
-                                    BIND (IF(exists{?r <http://resource.geolba.ac.at/schema/GBA/PDF_download> ?pdf} , ?pdf, "") AS ?PDF) 
-                                    }`;
+        let query = `PREFIX dcterms:<http://purl.org/dc/terms/>
+                    SELECT DISTINCT ?Citation ?DSN ?PDF
+                    WHERE {
+                    VALUES ?r {${refArr}}
+                    ?r dcterms:bibliographicCitation ?Citation .
+                    OPTIONAL {?r dcterms:identifier ?dsn}
+                    BIND (IF(exists{?r dcterms:identifier ?dsn} , ?dsn, "") AS ?DSN)
+                    OPTIONAL {?r dcterms:source ?pdf}
+                    BIND (IF(exists{?r dcterms:source ?pdf} , ?pdf, "") AS ?PDF)
+                    }`;
 
         ws.json("ref", query, jsonData => {
             var html = '<br><blockquote class="blockquote">';
@@ -276,10 +277,10 @@ var detail = {
                 if (i.PDF.value !== '' && i.PDF.value.substring(0, 4) == 'http') {
                     html += '&nbsp;-&nbsp;<a ' + AT + 'href="' + i.PDF.value + '" style="font-style: normal;">[PDF]</a>';
                 } else if (i.PDF.value !== '') {
-                    html += '&nbsp;-&nbsp;<a ' + AT + 'href="http://opac.geologie.ac.at/wwwopacx/wwwopac.ashx?command=getcontent&server=images&value=' + i.PDF.value + '" style="font-style: normal;">[PDF]</a>';
+                    html += '&nbsp;-&nbsp;<a ' + AT + 'href="https://opac.geologie.ac.at/wwwopacx/wwwopac.ashx?command=getcontent&server=images&value=' + i.PDF.value + '" style="font-style: normal;">[PDF]</a>';
                 }
                 if (i.DSN.value !== '') {
-                    html += '&nbsp;-&nbsp;<a ' + AT + 'href="http://opac.geologie.ac.at/document/' + i.DSN.value + '" style="font-style: normal;">[Catalog]</a>';
+                    html += '&nbsp;-&nbsp;<a ' + AT + 'href="https://opac.geologie.ac.at/document/' + i.DSN.value + '" style="font-style: normal;">[Catalog]</a>';
                 }
                 html += '</footer>';
 
