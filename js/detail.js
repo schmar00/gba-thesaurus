@@ -8,7 +8,8 @@ const BaseUri = {
     gba: 'http://resource.geolba.ac.at/PoolParty/schema/GBA/',
     owl: 'http://www.w3.org/2002/07/owl#',
     rdfs: 'http://www.w3.org/2000/01/rdf-schema#',
-    dbpo: 'http://dbpedia.org/ontology/'
+    dbpo: 'http://dbpedia.org/ontology/',
+    schema: 'https://schema.org/'
 };
 
 const Uri = {
@@ -25,9 +26,9 @@ const Uri = {
     RELATIONS_1: [BaseUri.skos + 'broader', BaseUri.skos + 'narrower', BaseUri.skos + 'related'],
     RELATIONS_2: [BaseUri.skos + 'exactMatch', BaseUri.skos + 'closeMatch', BaseUri.skos + 'relatedMatch', BaseUri.skos + 'broadMatch', BaseUri.skos + 'narrowMatch'],
     RELATIONS_3: [BaseUri.rdfs + 'seeAlso', BaseUri.owl + 'sameAs', BaseUri.dcterms + 'relation', BaseUri.dcterms + 'hasPart', BaseUri.dcterms + 'isPartOf', BaseUri.dcterms + 'conformsTo'],
-    DATA_LINKS: [BaseUri.dcterms + 'source', BaseUri.dcterms + 'isReferencedBy', BaseUri.dcterms + 'subject', BaseUri.dcterms + 'isRequiredBy', BaseUri.dcterms + 'identifier'],
+    DATA_LINKS: [BaseUri.dcterms + 'source', BaseUri.dcterms + 'isReferencedBy', BaseUri.dcterms + 'subject', BaseUri.dcterms + 'isRequiredBy', BaseUri.dcterms + 'identifier', BaseUri.schema + 'mainEntityOfPage'],
     VISUALIZATION: [BaseUri.dbpo + 'colourHexCode'],
-    LOCATION: [BaseUri.skos + 'example', BaseUri.geo + 'lat', BaseUri.geo + 'long', BaseUri.geo + 'location', BaseUri.dcterms + 'spatial'],
+    LOCATION: [BaseUri.skos + 'example', BaseUri.geo + 'lat_long', BaseUri.geo + 'location', BaseUri.dcterms + 'spatial'],
     CREATOR: [BaseUri.dcterms + 'creator', BaseUri.dcterms + 'created', BaseUri.dcterms + 'modified', BaseUri.dcterms + 'contributor']
 }
 
@@ -87,11 +88,11 @@ var detail = {
                         page.updateSharingTexts(pL);
                         break;
                     case 'dataViewer':
-                        if (uri.search('/structure/') == -1) {
+                        /*if (uri.search('/structure/') == -1) {
                             this.insertApp('Data', 'Viewer', 'http://gisgba.geologie.ac.at/DataViewer/tdv/Index.aspx?url=' + uri + '&lang=' + lang.ID, 'map');
-                        } else {
+                          } else {
                             this.insertApp('Structure', 'Viewer', 'structureViewer.html?uri=' + uri + '&lang=' + lang.ID, 'map');
-                        }
+                          }*/
                         break;
                     case 'picture':
                         ul.forEach(a => this.insertApp('text1', 'text2', $(a).attr('href'), 'picture'));
@@ -162,25 +163,35 @@ var detail = {
 
     insertTechnicalPart: function (key, data, props) { //loop all single properties
         let html = '';
-        let geoPath = 'http://www.w3.org/2003/01/geo/wgs84_pos#';
-        let coord = {};
+        /*        let geoPath = 'http://www.w3.org/2003/01/geo/wgs84_pos#';
+                let coord = {};*/
 
         props.forEach((i) => {
             let ul = this.getObj(data, i);
             if (ul.size > 0) {
                 html += '<tr><td headers="th1' + key + '" class="propTech">' + this.createHref(i) + '</td><td headers="th2' + key + '"><ul><li>' + Array.from(ul).join('</li><li>') + '</li></ul></td></tr>';
 
-                if (i == geoPath + 'lat') {
-                    coord.lat = Number(ul.values().next().value);
+                if (i == BaseUri.geo + 'lat_long') {
+                    this.insertApp('type', 'location', 'http://www.google.com/maps/place/' + ul.values().next().value.split(',')[0] + 'N+' + ul.values().next().value.split(',')[1] + 'E/@47.6381118,13.6028916,7z/data=!4m2!3m1!1s0x0:0x0', 'map-pin');
                 }
-                if (i == geoPath + 'long') {
-                    coord.long = Number(ul.values().next().value);
+                /*                if (i == geoPath + 'lat') {
+                                    coord.lat = Number(ul.values().next().value);
+                                }
+                                if (i == geoPath + 'long') {
+                                    coord.long = Number(ul.values().next().value);
+                                }
+                                if (coord.hasOwnProperty('lat') && coord.hasOwnProperty('long')) {
+                                    this.insertApp('type', 'location', 'http://www.google.com/maps/place/' + coord.lat + 'N+' + coord.long + 'E/@47.6381118,13.6028916,7z/data=!4m2!3m1!1s0x0:0x0', 'map-pin');
+                                    coord = {};
+                                }*/
+                if (i == BaseUri.schema + 'mainEntityOfPage') {
+                    if (ul.values().next().value.search('/structure/') == -1) {
+                        this.insertApp('Data', 'Viewer', ul.values().next().value.split('\"')[1] + '&lang=' + lang.ID, 'map');
+                    } else {
+                        this.insertApp('Structure', 'Viewer', 'structureViewer.html?uri=' + ul.values().next().value.split('\"')[1].split('=')[1] + '&lang=' + lang.ID, 'map');
+                    }
                 }
-                if (coord.hasOwnProperty('lat') && coord.hasOwnProperty('long')) {
-                    this.insertApp('type', 'location', 'http://www.google.com/maps/place/' + coord.lat + 'N+' + coord.long + 'E/@47.6381118,13.6028916,7z/data=!4m2!3m1!1s0x0:0x0', 'map-pin');
-                    coord = {};
-                }
-                if (i == 'http://dbpedia.org/ontology/colourHexCode') {
+                if (i == BaseUri.dbpo + 'colourHexCode') {
                     this.insertApp('<span class="colorBox" style="background:' + ul.values().next().value + ';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>Color', ul.values().next().value, 'https://www.w3schools.com/colors/colors_converter.asp?color=' + ul.values().next().value.replace('#', ''), '');
                 }
 
@@ -445,7 +456,8 @@ var detail = {
         relatedConcepts: [...Uri.RELATIONS_1, ...Uri.RELATIONS_2],
         dataViewer: Uri.GBA_DATAVIEWER
     },
-    FRONT_LIST_EMBEDDED: {/*FOR EMBEDDED PAGE VERSION*/
+    FRONT_LIST_EMBEDDED: {
+        /*FOR EMBEDDED PAGE VERSION*/
         prefLabel: Uri.PREF_LABEL,
         picture: Uri.PICTURE,
         altLabel: [...Uri.PREF_LABEL, ...Uri.SYNONYMS],
