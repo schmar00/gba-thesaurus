@@ -429,7 +429,7 @@ var detail = {
 
     imgPng: function (url) {
         if (url.search('geologie.ac.at') > -1) {
-            let a = url.split('.');
+            let a = url.replace('http:', 'https:').split('.');
             a.pop();
             url = a.join('.') + '.png';
         }
