@@ -11,6 +11,7 @@ var visNet = {
     _isColorize: false,
     _uri: null,
     _lang: null,
+    _itopic: false,
 
     init: function () {
         let urlParams = new URLSearchParams(window.location.search);
@@ -20,6 +21,7 @@ var visNet = {
 
         visNet._uri = uri;
         visNet._lang = lang;
+        visNet._itopic = document.getElementById("itopic");
 
         visNet.h_layout = {
             edges: {
@@ -176,13 +178,15 @@ var visNet = {
 
         }
         if (visID) {
-            $('#itopic').hide();
-            if (visNet.isExternalTab(visID)) {
-                $("#externalUri").val(visID);
-                document.getElementById("itopic").src = "network_desc.html";
-            } else {
-                var src = visNet.isExternal(visID) ? visID : "index.html?embedded=1&uri=" + visID;
-                document.getElementById("itopic").src = src;
+            if (visNet._itopic) {
+                $('#itopic').hide();
+                if (visNet.isExternalTab(visID)) {
+                    $("#externalUri").val(visID);
+                    document.getElementById("itopic").src = "network_desc.html";
+                } else {
+                    var src = visNet.isExternal(visID) ? visID : "index.html?embedded=1&uri=" + visID;
+                    document.getElementById("itopic").src = src;
+                }
             }
         }
 
@@ -196,6 +200,7 @@ var visNet = {
         BGS: 'http://data.bgs.ac.uk/id/EarthMaterialClass/',
         WIKIDATA: 'http://www.wikidata.org/entity/',
         GEMET: 'http://www.eionet.europa.eu/gemet/',
+        MICA: 'https://w3id.org/mica/ontology/MicaOntology/',
         GBA: 'http://resource.geolba.ac.at'
     },
     isExternal: function (uri) {
@@ -344,37 +349,44 @@ var visNet = {
             }, 500);
         });
 
-        /*network.on("doubleClick", function (params) {
-            //console.log('doubleClick Event:', params);
-            if (params.nodes[0].indexOf('resource.geolba') == -1) {
-                window.location.href = params.nodes;
+        if (!visNet._itopic) {
+            var holdId = $("#holdId");
+            var supportsTouch = typeof (window.ontouchstart) !== 'undefined' || navigator.msMaxTouchPoints;
+            if (supportsTouch) {
+                network.on("hold", function (params) {
+                    visNet._click = false;
+                    if (params.nodes[0].indexOf('resource.geolba') == -1) {
+                        window.location.href = params.nodes;
+                    } else {
+                        window.location.href = 'index.html?uri=' + params.nodes;
+                    }
+                });
+                holdId.html("hold node");
             } else {
-                window.location.href = 'index.html?uri=' + params.nodes;
+                network.on("doubleClick", function (params) {
+                    visNet._click = false;
+                    if (params.nodes[0].indexOf('resource.geolba') == -1) {
+                        window.location.href = params.nodes;
+                    } else {
+                        window.location.href = 'index.html?uri=' + params.nodes;
+                    }
+                });
+                holdId.html("doubleclick node");
             }
-        });*/
+        }
         network.on("click", function (params) {
             //console.log('doubleClick Event:', params);
-            var uri = params.nodes[0];
-            if (visNet.currentUri != uri) {
-                //visNet.nodesArr = [];
-                if (visNet.extGraph(params.nodes[0]))
-                    visNet.drawNetwork();
-            }
-        });
-        network.on("hold", function (params) {
-            //console.log('hold Event:', params);
-            /*if (params.nodes[0].indexOf('resource.geolba') == -1) {
-                window.location.href = params.nodes;
-            } else {
-                window.location.href = 'index.html?uri=' + params.nodes;
-            }*/
-        });
-        network.on("doubleClick", function (params) {
-            if (params.nodes[0].indexOf('resource.geolba') == -1) {
-                window.location.href = params.nodes;
-            } else {
-                window.location.href = 'index.html?uri=' + params.nodes;
-            }
+            visNet._click = true;
+            setTimeout(function () {
+                if (visNet._click) {
+                    var uri = params.nodes[0].replace('http://', 'https://');
+                    if (visNet.currentUri != uri) {
+                        //visNet.nodesArr = [];
+                        if (visNet.extGraph(params.nodes[0]))
+                            visNet.drawNetwork();
+                    }
+                }
+            }, 550);
         });
 
         document.body.addEventListener('keydown', function (e) {

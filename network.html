@@ -8,7 +8,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://visjs.github.io/vis-network/dist/vis-network.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.5.11/split.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
     <!--    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
@@ -42,36 +41,6 @@
             float: right;
         }
 
-        .split {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            overflow-y: auto;
-            overflow-x: hidden;
-        }
-
-        .gutter {
-            background-color: transparent;
-            background-repeat: no-repeat;
-            background-position: 50%;
-        }
-
-        .gutter.gutter-horizontal {
-            cursor: col-resize;
-            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
-        }
-
-        .gutter.gutter-vertical {
-            cursor: row-resize;
-            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
-        }
-
-        .split.split-horizontal,
-        .gutter.gutter-horizontal {
-            height: 500px;
-            float: left;
-        }
-
         .custom-control-label {
             padding-right: 10px;
         }
@@ -88,21 +57,13 @@
         <div class="row no-gutters" style="height:100%;">
             <div id="one" class="card col">
                 <div id="mynetworkContainer" class="card-body">
-                    <!--                    <div id="mynetworkToolbar" style="" class="input-group form-group input-group-text">
-                        <button id="btnThesaurus" title="Go to GBA Thesaurus" type="button" class="btn btn-success" style="margin-right:30px;" onclick="this.blur(); visNet.openThesaurus();">close X</button>
-
-                        &nbsp;&nbsp; <input id="cbHierarchy" style="" type="checkbox" data-on="Hierarchical view" data-off="Graph view" data-onstyle="success" data-offstyle="secondary" data-toggle="toggle" onchange="this.blur();visNet.clickHierarchy();" />
-                        &nbsp;&nbsp; <input id="cbConcepts" type="checkbox" data-on="Linked Data" data-onstyle="secondary" data-offstyle="success" data-off="Thesaurus" checked data-toggle="toggle" onchange="this.blur();visNet.clickExtConcepts();" />
-                        &nbsp;&nbsp; <input id="cbColorize" type="checkbox" data-on="web colors" data-off="standard" data-onstyle="success" data-offstyle="secondary" data-toggle="toggle" onchange="this.blur();visNet.clickColorize();" />
-
-                    </div>-->
-
 
                     <button id="btnThesaurus" title="GBA Thesaurus" type="button" class="close" style="" onclick="this.blur(); visNet.openThesaurus();">close x</button>
 
                     <div id="mynetworkToolbar" class="form-inline">
                         <div style="float: left; margin-bottom: 10px;">
-                            <form class="form-inline"><strong>View:</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <form class="form-inline">
+                                <strong>View:</strong>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <div class="form-group">
                                     <div class="custom-control custom-switch">
                                         <input type="checkbox" class="custom-control-input" id="cbHierarchy" toggle="toggle" onchange="this.blur();visNet.clickHierarchy();">
@@ -134,33 +95,11 @@
                         powered by <a href="http://visjs.org"><img src="data:image/gif;base64,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"></a>
                     </span>
 
-                    <span id="help"><strong>click node</strong> for details and adding related concepts</span><!-- / press <strong>x</strong> for hierarchical layout</span>-->
+                    <span id="help"><strong>Tip: click node</strong> to add related concepts&nbsp;&nbsp;<strong><span id="holdId">doubleclick node</span></strong> for details</span>
                 </div>
-            </div>
-            <div id="two" class="card col" style="display:block;height:100%;">
-                <iframe id="itopic" style="width:100%;height:100%;padding-bottom:20px;" frameBorder='0' onload="setTimeout(function () { $('#itopic').show(); }, 500);"></iframe>
             </div>
             <input type="hidden" id="externalUri" />
         </div>
-        <script>
-            var splitobj = Split(["#one", "#two"], {
-                elementStyle: function(dimension, size, gutterSize) {
-                    //$(window).trigger('resize'); // Optional
-                    return {
-                        'flex-basis': 'calc(' + size + '% - ' + gutterSize + 'px)'
-                    }
-                },
-                gutterStyle: function(dimension, gutterSize) {
-                    return {
-                        'flex-basis': gutterSize + 'px'
-                    }
-                },
-                sizes: [60, 40],
-                minSize: 150,
-                gutterSize: 6,
-                cursor: 'col-resize'
-            });
-        </script>
 
     </div>
 </body></html>
