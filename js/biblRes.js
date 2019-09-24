@@ -6,6 +6,8 @@ var biblRes = {
     init: function () {
         let urlParams = new URLSearchParams(window.location.search);
         let thesProjName = urlParams.get('proj');
+        let all = thesProjName == null || thesProjName == "";
+
         //$('#headRef').text(`Bibliographic references used for ${thesProjName}`);
         //console.log(urlParams.get('uri')); // "http.."
         let query1 = encodeURIComponent(`   PREFIX skos:<http://www.w3.org/2004/02/skos/core#>
@@ -14,7 +16,7 @@ var biblRes = {
                                             WHERE {
                                             ?s dcterms:references ?o
                                             }`);
-        
+
         let query2 = encodeURIComponent(`   PREFIX dcterms:<http://purl.org/dc/terms/>
                                             SELECT DISTINCT *
                                             WHERE {
@@ -28,21 +30,31 @@ var biblRes = {
         let refs = [];
 
 
-        let result = fetch(url, {
-                method: 'get',
-            }).then(function (response) {
-                return response.json();
-            }).then(function (data) {
-                refs = Array.from(data.results.bindings, a => (a.o.value));
-                //console.log(refs);
-                return fetch(`${ws.endpoint}ref?query=${query2}&format=application/json`);
-            })
-            .then(function (response) {
-                return response.json();
-            })
-            .catch(function (error) {
-                console.log('Request failed', error);
-            });
+        let result =
+            all ?
+                fetch(`${ws.endpoint}ref?query=${query2}&format=application/json`).then(function (response) {
+                    return response.json();
+                })
+                    .catch(function (error) {
+                        console.log('Request failed', error);
+                    })
+                :
+
+                fetch(url, {
+                    method: 'get',
+                }).then(function (response) {
+                    return response.json();
+                }).then(function (data) {
+                    refs = Array.from(data.results.bindings, a => (a.o.value));
+                    //console.log(refs);
+                    return fetch(`${ws.endpoint}ref?query=${query2}&format=application/json`);
+                })
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .catch(function (error) {
+                        console.log('Request failed', error);
+                    });
 
         result.then(function (r) {
             let firstChar = '§';
@@ -55,7 +67,7 @@ var biblRes = {
                 c1 = "";
 
             for (let i of r.results.bindings) {
-                if (refs.includes(i.s.value)) {
+                if (all || refs.includes(i.s.value)) {
                     count++;
                     let idx = '';
                     let pdfx = '';
