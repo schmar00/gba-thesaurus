@@ -45,7 +45,6 @@ var detail = {
             `;
 
         ws.json(uri.split("/")[3], query, function (data) {
-            console.log(data);
             if (data.results.bindings.length > 1) {
                 var F = page.isEmbedded ? detail.FRONT_LIST_EMBEDDED : detail.FRONT_LIST;
                 for (var key in F) detail.insertFrontPart(key, uri, data, Array.from(F[key].values()));
@@ -69,7 +68,7 @@ var detail = {
         });
     },
     rdfTS: function (url) {
-        document.getElementById('irdfQuery').value = "describe <" + url + ">";
+        document.getElementById('irdfQuery').value = "CONSTRUCT {?s ?p ?o} WHERE {VALUES ?s {<" + url + ">} ?s ?p ?o}";
         document.getElementById('irdfForm').submit();
     },
     insertFrontPart: function (key, uri, data, props) {
