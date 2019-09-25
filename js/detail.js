@@ -38,17 +38,19 @@ var detail = {
         var query = `PREFIX skos:<http://www.w3.org/2004/02/skos/core#> 
                     SELECT DISTINCT ?p ?o (GROUP_CONCAT(DISTINCT CONCAT(STR(?L), "@", lang(?L)) ; separator="|") AS ?Label) 
                     WHERE { 
-                    VALUES ?s {<${uri}>} ?s ?p ?o . 
+                    VALUES ?s {<${uri}>} ?s a skos:Concept . ?s ?p ?o .
                     OPTIONAL {?o a skos:Concept; skos:prefLabel ?L}
                     } 
                     GROUP BY ?p ?o 
             `;
 
         ws.json(uri.split("/")[3], query, function (data) {
-            var F = page.isEmbedded ? detail.FRONT_LIST_EMBEDDED : detail.FRONT_LIST;
-            for (var key in F) detail.insertFrontPart(key, uri, data, Array.from(F[key].values()));
-            var div = $('#pageContent');
-            div.append(`<hr>
+            console.log(data);
+            if (data.results.bindings.length > 1) {
+                var F = page.isEmbedded ? detail.FRONT_LIST_EMBEDDED : detail.FRONT_LIST;
+                for (var key in F) detail.insertFrontPart(key, uri, data, Array.from(F[key].values()));
+                var div = $('#pageContent');
+                div.append(`<hr>
                                 <div style="cursor: pointer; color: #404040;" id="detailsBtn" 
                                     onclick="javascript: page.toggleRead(\'detailsBtn\', \'detailsToggle\', \'read more\');"> <span class="fa fa-caret-down"></span> <em>read more ..</em>
                                 </div>
@@ -58,10 +60,12 @@ var detail = {
                                 </div>
                                 `);
 
-            for (key in detail.TECHNICAL_LIST) detail.insertTechnicalPart(key, data, Array.from(detail.TECHNICAL_LIST[key].values()));
-            div.append('');
-
-            detail.insertConceptBrowser(div, uri, 50);
+                for (key in detail.TECHNICAL_LIST) detail.insertTechnicalPart(key, data, Array.from(detail.TECHNICAL_LIST[key].values()));
+                div.append('');
+                detail.insertConceptBrowser(div, uri, 50);
+            } else {
+                $('#pageContent').append(`<br>no results for <br>URI: <span style="color: red;"><strong>${uri}</strong></span> <br>`);
+            }
         });
     },
     rdfTS: function (url) {

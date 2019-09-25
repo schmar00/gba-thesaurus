@@ -9,7 +9,8 @@ var ws = {
     json: function (uri, query, thenFunc) {
         return fetch(this.endpoint + uri + '?query=' + encodeURIComponent(query) + '&format=application/json')
             .then(res => res.json())
-            .then(thenFunc);
+            .then(thenFunc)
+            .catch(error => $('#pageContent').append(`<br>no results for <br>URI: <span style="color: red;"><strong>${uri}</strong></span> <br>`));
     },
     docJson: function (query, thenFunc) {
         return fetch(this.endpoint + 'doc?query=' + encodeURIComponent(query) + '&format=application/json')
