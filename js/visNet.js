@@ -147,7 +147,7 @@ var visNet = {
                 }
             });
             visNet.extGraph(uri, true);
-            visNet.drawNetwork(lang);
+            visNet.drawNetwork();
         });
     },
 
@@ -296,7 +296,7 @@ var visNet = {
     __colUnsetNode: function (n) {
         n.color = '#6AAFFF';
     },
-    drawNetwork: function (lang) {
+    drawNetwork: function () {
         // create array with nodes and edges
 
         visNet.nodesArr.forEach((n1) => {
@@ -358,7 +358,7 @@ var visNet = {
                     if (params.nodes[0].indexOf('resource.geolba') == -1) {
                         window.location.href = params.nodes;
                     } else {
-                        window.location.href = 'index.html?uri=' + params.nodes + '&lang=' + lang;
+                        window.location.href = 'index.html?uri=' + params.nodes;
                     }
                 });
                 holdId.html("hold node");
@@ -368,7 +368,7 @@ var visNet = {
                     if (params.nodes[0].indexOf('resource.geolba') == -1) {
                         window.location.href = params.nodes;
                     } else {
-                        window.location.href = 'index.html?uri=' + params.nodes + '&lang=' + lang;
+                        window.location.href = 'index.html?uri=' + params.nodes;
                     }
                 });
                 holdId.html("doubleclick node");
@@ -383,7 +383,7 @@ var visNet = {
                     if (visNet.currentUri != uri) {
                         //visNet.nodesArr = [];
                         if (visNet.extGraph(params.nodes[0]))
-                            visNet.drawNetwork(lang);
+                            visNet.drawNetwork();
                     }
                 }
             }, 550);
