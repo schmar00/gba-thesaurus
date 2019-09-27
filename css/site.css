@@ -4,7 +4,7 @@
 body {
     background-color: #FFFFFF;
     font-size: 100%;
-	padding-top: 70px;
+    padding-top: 70px;
 }
 
 
@@ -41,7 +41,7 @@ a:hover {
 
 #searchCard {
     padding-top: 8px !important;
-    
+
 }
 
 #searchInputLabel {
@@ -186,6 +186,11 @@ figure {
     width: auto;
     height: 120px;
     padding-right: 20px;
+}
+
+.abstract pre {
+    padding: 10px;
+    background-color: #f7f7f7;
 }
 
 .skosRel {
