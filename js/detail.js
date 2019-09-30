@@ -5,7 +5,7 @@ const BaseUri = {
     dcterms: 'http://purl.org/dc/terms/',
     foaf: 'http://xmlns.com/foaf/0.1/',
     geo: 'http://www.w3.org/2003/01/geo/wgs84_pos#',
-    gba: 'http://resource.geolba.ac.at/PoolParty/schema/GBA/',
+    gba: 'http://resource.geolba.ac.at/schema/thes#',
     owl: 'http://www.w3.org/2002/07/owl#',
     rdfs: 'http://www.w3.org/2000/01/rdf-schema#',
     dbpo: 'http://dbpedia.org/ontology/',
@@ -17,8 +17,8 @@ const Uri = {
     PICTURE: [BaseUri.foaf + 'depiction'],
     SYNONYMS: [BaseUri.skos + 'altLabel'],
     NOTATION: [BaseUri.skos + 'notation'],
-    GBA_STATUS: [BaseUri.gba + 'GBA_Status'],
-    GBA_DATAVIEWER: [BaseUri.gba + 'DataViewer'],
+    GBA_STATUS: [BaseUri.gba + 'status'],
+    //GBA_DATAVIEWER: [BaseUri.gba + 'DataViewer'],
     DESCRIPTION_1: [BaseUri.skos + 'definition'],
     DESCRIPTION_2: [BaseUri.skos + 'scopeNote', BaseUri.dcterms + 'description', BaseUri.dcterms + 'abstract'],
     CITATION: [BaseUri.dcterms + 'bibliographicCitation'],
@@ -456,8 +456,8 @@ var detail = {
         gbaStatus: Uri.GBA_STATUS,
         abstract: Uri.DESCRIPTION_1,
         citation: Uri.REF_LINKS,
-        relatedConcepts: [...Uri.RELATIONS_1, ...Uri.RELATIONS_2],
-        dataViewer: Uri.GBA_DATAVIEWER
+        //dataViewer: Uri.GBA_DATAVIEWER,
+        relatedConcepts: [...Uri.RELATIONS_1, ...Uri.RELATIONS_2]
     },
     FRONT_LIST_EMBEDDED: {
         /*FOR EMBEDDED PAGE VERSION*/
@@ -467,7 +467,7 @@ var detail = {
         notation: Uri.NOTATION,
         gbaStatus: Uri.GBA_STATUS,
         abstract: Uri.DESCRIPTION_1,
-        citation: Uri.REF_LINKS,
-        dataViewer: Uri.GBA_DATAVIEWER
+        //dataViewer: Uri.GBA_DATAVIEWER,
+        citation: Uri.REF_LINKS
     }
 };
