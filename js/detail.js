@@ -61,7 +61,12 @@ var detail = {
 
                 for (key in detail.TECHNICAL_LIST) detail.insertTechnicalPart(key, data, Array.from(detail.TECHNICAL_LIST[key].values()));
                 div.append('');
-                detail.insertConceptBrowser(div, uri, 50);
+
+                if (uri.split("/")[3] !== 'doc') {
+                    detail.insertConceptBrowser(div, uri, 50);
+                } else {
+                    div.append('<br><br><br><br><br><br><br><br><br><br>');
+                }
             } else {
                 $('#pageContent').append(`<br>no results for <br>URI: <span style="color: red;"><strong>${uri}</strong></span> <br>`);
             }
