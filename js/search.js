@@ -270,8 +270,8 @@ var search = {
                                         BIND(CONCAT(STR(?p),"|",STR(?L)) AS ?label) . FILTER(regex(?L,?n,"i")) 
                                         ?s skos:prefLabel ?pL . FILTER((lang(?pL)="${lang.ID}")) 
                                         BIND(IF(?p=skos:prefLabel,1,2) AS ?so) 
-                                        OPTIONAL {?s <http://resource.geolba.ac.at/PoolParty/schema/GBA/GBA_Status> ?st} 
-                                        BIND (IF(exists{?s <http://resource.geolba.ac.at/PoolParty/schema/GBA/GBA_Status> ?st} , ?st, 0) AS ?stat) 
+                                        OPTIONAL {?s <http://resource.geolba.ac.at/schema/thes#status> ?st}
+                                        BIND (IF(exists{?s <http://resource.geolba.ac.at/schema/thes#status> ?st} , ?st, 0) AS ?stat)
                                         } 
                                         GROUP BY ?s 
                                         ORDER BY ?sort 
