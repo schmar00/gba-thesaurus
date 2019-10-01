@@ -45,23 +45,24 @@
                 '<br><br>' +
                 '[English]<br>The GBA Thesaurus website is optimized for browsers Firefox, Chrome, Safari or MS Edge. - MS Internet Explorer 11 or older is not supported any more.' +
                 '</p></div>';
-                
+
 
             let uri = gup('uri', window.location.href);
             if (uri) {
                 uri = decodeURIComponent(uri);
-                html += '<a style="margin: 15px;" href="javascript: document.getElementById(\'irdfForm\').submit();" >Download RDF ['+uri+']</a ><form id="irdfForm" target="_blank" style="display: none; " method="post" action="https://resource.geolba.ac.at/PoolParty/sparql/GeologicTimeScale"><input type="hidden" name="query" id="irdfQuery" value="describe <' + uri + '>" /></form>';
+                html += '<a style="margin: 15px;" href="javascript: document.getElementById(\'irdfForm\').submit();" >Download RDF [' + uri + ']</a ><form id="irdfForm" target="_blank" style="display: none; " method="post" action="https://resource.geolba.ac.at/PoolParty/sparql/GeologicTimeScale"><input type="hidden" name="query" id="irdfQuery" value="describe <' + uri + '>" /></form>';
             }
             document.body.innerHTML = html;
 
         } else {
-            $(document).ready(function () {
+            $(document).ready(function() {
                 page.init();
             });
         }
     </script>
 
 </head>
+
 <body>
     <!-- Navigation -->
     <nav id="navBar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -192,14 +193,14 @@
                 &copy;
                 <script>
                     document.write(new Date().getFullYear());
-
                 </script>
                 <a href="https://www.geologie.ac.at">GBA</a> |
                 <a id="license" href="https://creativecommons.org/licenses/by-sa/3.0/at/deed">license</a> |
                 <a id="contact" href="mailto:thesaurus@geologie.ac.at">contact</a> |
                 <a id="disclaimer" href="javascript:page.openParaLink('info=disclaimer');">disclaimer</a> |
                 <a href="https://achecker.ca/checker/index.php?uri=referer&gid=WCAG2-AA" title="WCAG 2.0 Compatible">WCAG 2-AA</a> |
-                <a href="index.html?uri=http://resource.geolba.ac.at/doc/54">FAQ</a>
+                <a href="index.html?uri=http://resource.geolba.ac.at/doc/54">FAQ</a> |
+                <a href="https://github.com/schmar00/gba-thesaurus" class="flex flex-column items-center justify-center color-inherit w-100 pa2 br2 br--top no-underline hover-bg-blue4 hover-white"><i class="fab fa-github" style="font-size: 14px;"></i></a>
 
                 <!--                <a style="float:right;" href="https://achecker.ca/checker/index.php?uri=referer&gid=WCAG2-AA" title="WCAG 2.0 Compatible">
                     <img alt="WCAG Checker" src="https://achecker.ca/images/icon_W2_aa.jpg" alt="WCAG 2.0 (Level AA)" height="32" width="102" />
@@ -209,5 +210,4 @@
             </div>
         </div>
     </footer>
-</body>
-</html>
+</body></html>
