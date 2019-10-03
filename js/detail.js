@@ -155,6 +155,7 @@ var detail = {
             CGI: 'http://resource.geosciml.org/classifier/cgi/',
             ICS: 'http://resource.geosciml.org/classifier/ics/',
             DBpedia: 'http://dbpedia.org/resource/',
+            DBpediaDE: 'http://de.dbpedia.org/resource/',
             BGS: 'http://data.bgs.ac.uk/id/EarthMaterialClass/',
             MICA: 'https://w3id.org/mica/ontology/MicaOntology/',
             WIKIDATA: 'http://www.wikidata.org/entity/'
