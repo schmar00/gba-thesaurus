@@ -94,7 +94,7 @@
                         def: c.definition.value,
                         alt: c.altLabel.value
                     }));
-                    let mainConcept = concepts.find(a => a.uri == uri).label.replace(/[^\w\s]/gi, '_');
+                    let mainConcept = concepts.find(a => a.uri == uri).label; //.replace(/[^\w\s]/gi, '_');
                     //***************************************************
                     fetch(`https://gisgba.geologie.ac.at/arcgis/rest/services/G1000/AT_GBA_GEOERA_TEKT_TEST/FeatureServer/0/query?where=(THESURL='${concepts.map(a => a.uri).join("'+or+THESURL='")}')&outFields=*&returnGeometry=true&f=geojson`)
                         .then(r => r.json())
@@ -108,7 +108,7 @@
                             }
                             let file = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
 
-                            $('<a href="data:' + file + '" download="'+ mainConcept +'.json">GeoJSON</a><br>').appendTo('#getFile');
+                            $('<a href="data:' + file + '" download="' + mainConcept + '.json">GeoJSON</a><br>').appendTo('#getFile');
                         });
                     //***********************************
                     fetch(`https://gisgba.geologie.ac.at/arcgis/rest/services/G1000/AT_GBA_GEOERA_TEKT_TEST/FeatureServer/0/query?where=(THESURL='${concepts.map(a => a.uri).join("'+or+THESURL='")}')&outFields=*&returnGeometry=true&f=json`)
@@ -131,7 +131,7 @@
                                 i.attributes.alt = o.alt.substring(0, 255);
                             }
                             let file = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data_esri));
-                            $('<a href="data:' + file + '" download="'+ mainConcept +'_esri.json">EsriJSON</a><br>').appendTo('#getFile');
+                            $('<a href="data:' + file + '" download="' + mainConcept + '_esri.json">EsriJSON</a><br>').appendTo('#getFile');
                         });
                     //******************************************
                 });
