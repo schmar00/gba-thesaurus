@@ -4,12 +4,10 @@
     <meta charset=utf-8 />
     <title>Faults and thrusts</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Load Leaflet from CDN -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
-
-
     <!-- Load Esri Leaflet from CDN -->
     <script src="https://unpkg.com/esri-leaflet@2.3.0/dist/esri-leaflet.js"></script>
     <script src="js/ws.js"></script>
@@ -29,12 +27,6 @@
             left: 0;
         }
 
-    </style>
-</head>
-
-<body>
-
-    <style>
         #info-pane {
             position: absolute;
             top: 10px;
@@ -44,9 +36,24 @@
             background: white;
         }
 
+        #getFile {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 500;
+            padding: 1em;
+            background-color: hsla(0, 0%, 100%, 0.75);
+            font-family: sans-serif;
+        }
+
     </style>
+</head>
+
+<body>
+    <div id="getFile">Download<br></div>
 
     <div id="map"></div>
+
     <script>
         let urlParams = new URLSearchParams(window.location.search);
         let USER_LANG = (navigator.language || navigator.language).substring(0, 2);
@@ -58,14 +65,78 @@
 
             let uri = decodeURI(urlParams.get('uri').replace(/["';><]/gi, ''));
 
-            let query = encodeURIComponent(`PREFIX skos:<http://www.w3.org/2004/02/skos/core#>
+            let queryMap = encodeURIComponent(`PREFIX skos:<http://www.w3.org/2004/02/skos/core#>
                                             SELECT *
                                             WHERE {
                                             ?s skos:prefLabel ?L . FILTER (lang(?L)="${USER_LANG}") .
                                             BIND (IF(exists{<${uri}> skos:narrower* ?s} , ?s, 0) AS ?n) 
                                             }`);
 
-            fetch(`${ws.endpoint}structure?query=${query}&format=application/json`)
+            let queryDownLoad = encodeURIComponent(`PREFIX skos:<http://www.w3.org/2004/02/skos/core#>
+                                            SELECT ?s (MIN(?L) AS ?label) (MIN(?d) AS ?definition)
+                                            (GROUP_CONCAT(DISTINCT ?a; separator = '; ') as ?altLabel)
+                                            WHERE {
+                                            <${uri}> skos:narrower* ?s .
+                                            ?s skos:prefLabel ?L; skos:definition ?d
+                                            . FILTER (lang(?L)="${USER_LANG}") . FILTER (lang(?d)="${USER_LANG}")
+                                            BIND (IF(exists{?s skos:altLabel ?alt. FILTER (lang(?alt)="${USER_LANG}")} , ?alt, 0) AS ?a)
+                                            }
+                                            GROUP by ?s`);
+
+            fetch(`${ws.endpoint}structure?query=${queryDownLoad}&format=application/json`)
+                .then(res => res.json())
+                .then(jsonData => {
+                    let fields = ['label', 'def', 'alt'];
+
+                    let concepts = jsonData.results.bindings.map(c => ({
+                        uri: c.s.value,
+                        label: c.label.value,
+                        def: c.definition.value,
+                        alt: c.altLabel.value
+                    }));
+                    let mainConcept = concepts.find(a => a.uri == uri).label.replace(/[^\w\s]/gi, '_');
+                    //***************************************************
+                    fetch(`https://gisgba.geologie.ac.at/arcgis/rest/services/G1000/AT_GBA_GEOERA_TEKT_TEST/FeatureServer/0/query?where=(THESURL='${concepts.map(a => a.uri).join("'+or+THESURL='")}')&outFields=*&returnGeometry=true&f=geojson`)
+                        .then(r => r.json())
+                        .then(data => {
+
+                            for (i of data.features) {
+                                let o = concepts.find(x => x.uri == i.properties.THESURL);
+                                i.properties.label = o.label;
+                                i.properties.def = o.def;
+                                i.properties.alt = o.alt;
+                            }
+                            let file = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
+
+                            $('<a href="data:' + file + '" download="'+ mainConcept +'.json">GeoJSON</a><br>').appendTo('#getFile');
+                        });
+                    //***********************************
+                    fetch(`https://gisgba.geologie.ac.at/arcgis/rest/services/G1000/AT_GBA_GEOERA_TEKT_TEST/FeatureServer/0/query?where=(THESURL='${concepts.map(a => a.uri).join("'+or+THESURL='")}')&outFields=*&returnGeometry=true&f=json`)
+                        .then(r => r.json())
+                        .then(data_esri => {
+
+                            for (a of fields) {
+                                data_esri.fields.push({
+                                    alias: a,
+                                    length: 255,
+                                    name: a,
+                                    type: 'esriFieldTypeString'
+                                });
+                            }
+
+                            for (i of data_esri.features) {
+                                let o = concepts.find(x => x.uri == i.attributes.THESURL);
+                                i.attributes.label = o.label.substring(0, 255);
+                                i.attributes.def = o.def.substring(0, 255);
+                                i.attributes.alt = o.alt.substring(0, 255);
+                            }
+                            let file = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data_esri));
+                            $('<a href="data:' + file + '" download="'+ mainConcept +'_esri.json">EsriJSON</a><br>').appendTo('#getFile');
+                        });
+                    //******************************************
+                });
+
+            fetch(`${ws.endpoint}structure?query=${queryMap}&format=application/json`)
                 .then(res => res.json())
                 .then(jsonData => {
                     let narrower = jsonData.results.bindings.map(concept => (concept.n.value));
