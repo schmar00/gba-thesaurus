@@ -5,6 +5,10 @@
     <title>Faults and thrusts</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css">
+    <link rel="stylesheet" href="css/FontAwesome/all.min.css" />
+
     <!-- Load Leaflet from CDN -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
@@ -45,12 +49,14 @@
             background-color: hsla(0, 0%, 100%, 0.75);
             font-family: sans-serif;
         }
-
     </style>
 </head>
 
 <body>
-    <div id="getFile">Download<br></div>
+    <div id="getFile">
+        <i class="fas fa-file-download" style="font-size: large;"></i>
+        <br>
+    </div>
 
     <div id="map"></div>
 
@@ -106,9 +112,9 @@
                                 i.properties.def = o.def;
                                 i.properties.alt = o.alt;
                             }
-                            let file = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
-
-                            $('<a href="data:' + file + '" download="' + mainConcept + '.json">GeoJSON</a><br>').appendTo('#getFile');
+                            //let file = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
+                            //$('<a href="data:' + file + '" download="' + mainConcept + '.json">GeoJSON</a><br>').appendTo('#getFile');
+                            addDownload(data, mainConcept, 'Geo');
                         });
                     //***********************************
                     fetch(`https://gisgba.geologie.ac.at/arcgis/rest/services/G1000/AT_GBA_GEOERA_TEKT_TEST/FeatureServer/0/query?where=(THESURL='${concepts.map(a => a.uri).join("'+or+THESURL='")}')&outFields=*&returnGeometry=true&f=json`)
@@ -130,8 +136,9 @@
                                 i.attributes.def = o.def.substring(0, 255);
                                 i.attributes.alt = o.alt.substring(0, 255);
                             }
-                            let file = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data_esri));
-                            $('<a href="data:' + file + '" download="' + mainConcept + '_esri.json">EsriJSON</a><br>').appendTo('#getFile');
+                            //let file = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data_esri));
+                            //$('<a href="data:' + file + '" download="' + mainConcept + '_esri.json">EsriJSON</a><br>').appendTo('#getFile');
+                            addDownload(data_esri, mainConcept, 'Esri');
                         });
                     //******************************************
                 });
@@ -182,8 +189,21 @@
                 });
         }
 
+        function addDownload(data, mainConcept, spec) {
+            let text2 = new Blob([JSON.stringify(data)], {
+                type: 'text/json'
+            });
+            let down2 = document.createElement('a');
+            down2.download = mainConcept + '_' + spec + '.json';
+            down2.href = window.URL.createObjectURL(text2);
+            down2.addEventListener("onclick", function(){ if (navigator.msSaveOrOpenBlob) {
+                    navigator.msSaveOrOpenBlob(text2, mainConcept + '_' + spec + '.json');
+                    return false;
+                }});
+            $('#getFile').append(down2);
+            down2.innerText = spec + 'JSON';
+            $('#getFile').append('<br>');
+        }
     </script>
 
-</body>
-
-</html>
+</body></html>
