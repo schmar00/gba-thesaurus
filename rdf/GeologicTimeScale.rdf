@@ -5585,10 +5585,6 @@
 	<altLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Sinemur</altLabel>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/179">
-	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="de">Paratethys Stufengliederung</label>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/6">
 	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/doblor"/>
 </rdf:Description>
@@ -8093,10 +8089,6 @@
 	<isOlderThan xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:resource="http://resource.geolba.ac.at/GeologicTimeScale/33"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/1">
-	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ICS International Stratigraphic Chart 2013</label>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/187">
 	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Stage/Age (ASC  2004).</definition>
 </rdf:Description>
@@ -9886,10 +9878,6 @@
 	<exactMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Famennian"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/193">
-	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="de">Informelle Begriffe</label>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/49">
 	<date xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-04T14:40:55Z</date>
 </rdf:Description>
@@ -10709,10 +10697,6 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/43">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/1">
-	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="de">ICS Internationale stratigraphische Tabelle 2013</label>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/77">
