@@ -7,56 +7,15 @@
  *
  * */
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
-    return typeof obj;
-} : function (obj) {
-    return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj;
-};
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 
-var _createClass = function () {
-    function defineProperties(target, props) {
-        for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];
-            descriptor.enumerable = descriptor.enumerable || false;
-            descriptor.configurable = true;
-            if ("value" in descriptor) descriptor.writable = true;
-            Object.defineProperty(target, descriptor.key, descriptor);
-        }
-    }
-    return function (Constructor, protoProps, staticProps) {
-        if (protoProps) defineProperties(Constructor.prototype, protoProps);
-        if (staticProps) defineProperties(Constructor, staticProps);
-        return Constructor;
-    };
-}();
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-function _possibleConstructorReturn(self, call) {
-    if (!self) {
-        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-    return call && (typeof call === "object" || typeof call === "function") ? call : self;
-}
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-        throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
-    }
-    subClass.prototype = Object.create(superClass && superClass.prototype, {
-        constructor: {
-            value: subClass,
-            enumerable: false,
-            writable: true,
-            configurable: true
-        }
-    });
-    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-    }
-}
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var GeoShape = {
 
@@ -66,7 +25,7 @@ var GeoShape = {
      * @param {any} jsonObject - input GeoJSON object
      * @param {any} resultZipFile - desired filename of output zip file
      */
-    transformAndDownload: function transformAndDownload(jsonObject, mainConcept, resultZipFile) {
+    transformAndDownload: function transformAndDownload(jsonObject, resultZipFile) {
         this.files = [];
         this.files["Point"] = new PointFileGen();
         this.files["LineString"] = new LineStringFileGen();
@@ -76,8 +35,7 @@ var GeoShape = {
         this.files["MultiPolygon"] = new MultiPolygonFileGen();
 
         jsonObject.features.forEach(function (item, index) {
-            if (item.geometry) this.files[item.geometry.type].process(item);
-            else if (item.geometries) {
+            if (item.geometry) this.files[item.geometry.type].process(item); else if (item.geometries) {
                 //GeometryCollection
                 item.geometries.forEach(function (item, index) {
                     var gitem = {};
@@ -107,10 +65,8 @@ var GeoShape = {
             }
         }
 
-        if (!resultZipFile) resultZipFile = mainConcept + ".zip";
-        zip.generateAsync({
-            type: "blob"
-        }).then(function (blob) {
+        if (!resultZipFile) resultZipFile = "result.zip";
+        zip.generateAsync({ type: "blob" }).then(function (blob) {
             // 1) generate the zip file
             GeoShape._downloadBlob(blob, resultZipFile); // 2) trigger the download
         }, function (err) {
@@ -123,8 +79,7 @@ var GeoShape = {
      * @param {any} resultZipFile
      */
     _downloadBlob: function _downloadBlob(blob, resultZipFile) {
-        if (window.navigator && window.navigator.msSaveBlob) window.navigator.msSaveBlob(blob, resultZipFile);
-        else {
+        if (window.navigator && window.navigator.msSaveBlob) window.navigator.msSaveBlob(blob, resultZipFile); else {
             var a = document.createElement("a");
             a.style = "display: none";
             document.body.appendChild(a);
@@ -133,7 +88,7 @@ var GeoShape = {
             var url = window.URL.createObjectURL(blob);
             a.href = url;
             a.download = resultZipFile;
-            a.target = "_blank";
+            a.target = "_self";
             //programatically click the link to trigger the download
             a.click();
             //release the reference to the file by revoking the Object URL
@@ -202,8 +157,7 @@ var GeoShape = {
         ofs = 8 + 44 + offset;
         for (var i = 0; i < rec.partCount; i++) {
             shpView.setInt32(ofs + 4 * i, rec.partIndices[i], true);
-        }
-        ofs = 8 + 44 + offset + 4 * rec.partCount;
+        } ofs = 8 + 44 + offset + 4 * rec.partCount;
         for (var i = 0; i < pc; i++) {
             shpView.setFloat64(ofs + 8 * i, rec.points[i], true);
         }
@@ -302,22 +256,19 @@ var ShapeRecord = function () {
          * @param {any} idLen - record id field length
          */
         value: function getDbfRecordArray(id, idLen) {
-            var rec = new Array(1 /*delMarker*/ + idLen) /*.fill(32)*/ ;
+            var rec = new Array(1 /*delMarker*/ + idLen) /*.fill(32)*/;
             for (var i = 0; i < rec.length; i++) {
                 rec[i] = 32;
-            }
-            var val = ShapeRecord.toArray(id);
+            } var val = ShapeRecord.toArray(id);
             // write fid
-            for (var d = idLen, s = val.length - 1; s >= 0; d--, s--) {
+            for (var d = idLen, s = val.length - 1; s >= 0; d-- , s--) {
                 rec[d] = val[s];
-            }
-            for (var item in this.fileGen.propertyNames) {
+            } for (var item in this.fileGen.propertyNames) {
                 var flen = this.fileGen.propertyLengths[item];
-                var f = new Array(flen) /*.fill(32)*/ ;
+                var f = new Array(flen) /*.fill(32)*/;
                 for (var i = 0; i < f.length; i++) {
                     f[i] = 32;
-                }
-                val = this.properties[item];
+                } val = this.properties[item];
                 if (val) {
                     for (var i = 0; i < val.length; i++) {
                         f[i] = val[i];
@@ -377,8 +328,7 @@ var ShapeRecord = function () {
             var res = [];
             for (var i = 0; i < str.length; i++) {
                 res[i] = str.charCodeAt(i);
-            }
-            return res;
+            } return res;
         }
 
         /**
@@ -395,8 +345,7 @@ var ShapeRecord = function () {
             var utf8 = [];
             for (var i = 0; i < str.length; i++) {
                 var charcode = str.charCodeAt(i);
-                if (charcode < 0x80) utf8.push(charcode);
-                else if (charcode < 0x800) {
+                if (charcode < 0x80) utf8.push(charcode); else if (charcode < 0x800) {
                     utf8.push(0xc0 | charcode >> 6, 0x80 | charcode & 0x3f);
                 } else if (charcode < 0xd800 || charcode >= 0xe000) {
                     utf8.push(0xe0 | charcode >> 12, 0x80 | charcode >> 6 & 0x3f, 0x80 | charcode & 0x3f);
@@ -468,7 +417,7 @@ var ESRIFileGen = function () {
 
     }, {
         key: "process",
-        value: function process(item) {}
+        value: function process(item) { }
         /**
          * Target files - names
          */
@@ -599,13 +548,12 @@ var ESRIFileGen = function () {
                 f = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x43, 0, 0, 0, 0, flen, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
                 for (var i = 0; i < item.length; i++) {
                     f[i] = item.charCodeAt(i);
-                }
-                fieldCount++;
+                } fieldCount++;
                 recordBytes += flen;
                 h = h.concat(f);
             };
 
-            headerSize += 32 * fieldCount + 1 /*fieldTerm*/ ;
+            headerSize += 32 * fieldCount + 1 /*fieldTerm*/;
             h[headerSize - 1] = 13; /*fieldTerm*/
             var size = headerSize + (1 /*delMarker*/ + recordBytes) * this.records.length;
 
