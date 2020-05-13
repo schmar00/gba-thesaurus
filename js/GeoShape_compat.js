@@ -112,11 +112,11 @@ var GeoShape = {
             type: "blob"
         }).then(function (blob) {
             // 1) generate the zip file
-            try {
-                GeoShape._downloadBlob(blob, resultZipFile);
-            } catch (e) {
-                GeoShape._addDownload(blob, resultZipFile);
-            }
+
+            //GeoShape._downloadBlob(blob, resultZipFile);
+
+            GeoShape._addDownload(blob, resultZipFile);
+
 
 
         }, function (err) {
