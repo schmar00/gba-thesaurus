@@ -2,6 +2,10 @@
 <rdf:RDF
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/187">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/231">
 	<broader xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/lithology/232"/>
 </rdf:Description>
@@ -1266,10 +1270,6 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/209">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/0">
-	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="de">Lithologische Klassifikation</label>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/64">
@@ -8245,10 +8245,6 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/214">
 	<exactMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://dbpedia.org/resource/Silt"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/26">
-	<exactMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.wikidata.org/entity/Q3115353"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/10">
@@ -19109,48 +19105,48 @@
 	<colourHexCode xmlns="http://dbpedia.org/ontology/">#00CC4C</colourHexCode>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/15">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T08:02:46.000Z</modified>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/146">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T12:58:58.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/145">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T16:26:36.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/15">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T08:02:46.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/16">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T08:09:27.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/148">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T08:02:01.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/145">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T16:26:36.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/13">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:50:01.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/14">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:54:31.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/148">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T08:02:01.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/147">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T08:01:39.000Z</modified>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/14">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:54:31.000Z</modified>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/11">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:32:22.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/12">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:45:23.000Z</modified>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/149">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:24.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/12">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:45:23.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/10">
@@ -19193,36 +19189,36 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T08:08:40.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/26">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-13T08:26:11.000Z</modified>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/157">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T09:26:34.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/156">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T07:13:47.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/26">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-09-24T08:47:30.568Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/27">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:22.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/24">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:42:10.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/156">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T07:13:47.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/159">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T16:21:46.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/158">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-19T12:39:29.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/24">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:42:10.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/25">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-08T09:31:37.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/158">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-19T12:39:29.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/22">
@@ -19277,88 +19273,88 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T08:12:15.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/124">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T14:35:07.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/37">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:57:09.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/245">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:52:15.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/37">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:57:09.000Z</modified>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/244">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-06-07T09:22:31.430Z</modified>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/123">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:47:05.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/124">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T14:35:07.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/38">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T16:08:38.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/247">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:52:51.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/123">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:47:05.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/126">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:48:29.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/244">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-06-07T09:22:31.430Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/35">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T16:09:49.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/36">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T14:35:34.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/126">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:48:29.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/246">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:52:33.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/247">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:52:51.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/125">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:47:49.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/33">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-14T11:10:05.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/246">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:52:33.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/249">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:27.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/36">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T14:35:34.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/128">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:25.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/248">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:53:23.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/249">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:27.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/34">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:56:14.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/33">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-14T11:10:05.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/127">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:25.000Z</modified>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/34">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:56:14.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/248">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:53:23.000Z</modified>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/31">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:55:42.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/32">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:26.000Z</modified>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/129">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-01T15:03:02.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/32">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:26.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/39">
@@ -19373,15 +19369,11 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-06-07T15:42:34.172Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/131">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:25.000Z</modified>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/252">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:54:41.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/130">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/131">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:25.000Z</modified>
 </rdf:Description>
 
@@ -19389,72 +19381,76 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:54:11.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/254">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-27T17:35:54.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/130">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:25.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/133">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-13T08:26:11.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/253">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-27T17:35:36.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/254">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-27T17:35:54.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/132">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:50:41.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/48">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:24.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/253">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-27T17:35:36.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/135">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:52:21.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/255">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-06-07T15:33:12.082Z</modified>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/134">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:51:49.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/48">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:24.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/49">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T11:24:36.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/46">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T11:24:13.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/134">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:51:49.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/255">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-06-07T15:33:12.082Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/137">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:26.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/136">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:26.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/46">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T11:24:13.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/47">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T16:04:28.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/44">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:25.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/136">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:26.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/139">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:24.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/138">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:24.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/44">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:25.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/45">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:25.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/138">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:24.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/42">
@@ -19493,104 +19489,104 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:58:32.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/223">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:36:02.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/102">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-28T11:33:21.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/59">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T13:24:48.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/102">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-28T11:33:21.000Z</modified>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/222">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:23.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/223">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:36:02.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/101">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-28T11:34:56.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/104">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:24:24.000Z</modified>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/0">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-12-06T09:11:54.000Z</modified>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/57">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T13:05:04.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/222">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:23.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/225">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:36:25.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/224">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:36:14.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/57">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T13:05:04.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/1">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-09T08:22:01.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/0">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-12-06T09:11:54.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/58">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T13:06:29.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/104">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:24:24.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/103">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:20:44.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/55">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T13:08:26.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/58">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T13:06:29.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/106">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:25:15.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/1">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-09T08:22:01.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/224">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:36:14.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/227">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:39:13.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/56">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T13:07:55.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/106">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:25:15.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/105">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:27.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/55">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T13:08:26.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/226">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:38:07.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/108">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:27:13.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/105">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:27.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/53">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T13:09:43.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/56">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T13:07:55.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/229">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-07-28T07:50:07.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/107">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:25:53.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/53">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T13:09:43.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/108">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:27:13.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/54">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T13:09:00.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/228">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:39:52.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/54">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T13:09:00.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/107">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:25:53.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/109">
@@ -19613,104 +19609,104 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:43:06.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/111">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:35:24.000Z</modified>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/232">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:45:19.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/231">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:44:30.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/111">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:35:24.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/110">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:34:13.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/113">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:38:11.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/231">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:44:30.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/234">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:46:47.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/112">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:37:40.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/113">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:38:11.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/233">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:46:07.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/68">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T10:06:23.000Z</modified>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/115">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:42:00.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/112">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:37:40.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/236">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:47:31.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/235">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:26.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/115">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:42:00.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/114">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:40:03.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/68">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T10:06:23.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/69">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T10:08:11.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/238">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:24.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/114">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:40:03.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/66">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T10:04:31.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/235">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:26.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/117">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:43:18.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/67">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T10:04:54.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/66">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T10:04:31.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/116">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:42:46.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/238">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:24.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/237">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:24.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/119">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:26.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/116">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:42:46.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/67">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T10:04:54.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/64">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T16:32:12.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/118">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/119">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:26.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/65">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T10:04:06.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/239">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T16:16:26.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/65">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T10:04:06.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/118">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:26.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/62">
@@ -19729,32 +19725,32 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:27.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/120">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T14:30:57.000Z</modified>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/241">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:49:32.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/120">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T14:30:57.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/240">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:48:27.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/243">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:50:33.000Z</modified>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/122">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T07:46:21.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/242">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:49:50.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/243">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:50:33.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/121">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:27.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/242">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:49:50.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/201">
@@ -19765,27 +19761,23 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:25:15.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/203">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:27:39.000Z</modified>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/79">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T16:07:11.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/203">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:27:39.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/202">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:26:18.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/205">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:23.000Z</modified>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/77">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:22.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/204">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/205">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:23.000Z</modified>
 </rdf:Description>
 
@@ -19793,20 +19785,24 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T11:12:08.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/75">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T10:09:13.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/204">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:23.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/207">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:29:44.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/206">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T13:59:26.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/75">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T10:09:13.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/76">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T16:10:41.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/206">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T13:59:26.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/209">
@@ -19857,36 +19853,36 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:24.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/216">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:33:25.000Z</modified>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/88">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:21.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/215">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:32:59.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/216">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:33:25.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/89">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T16:29:46.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/218">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:22.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/215">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:32:59.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/86">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T15:54:32.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/87">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T15:55:25.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/218">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:22.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/217">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:33:12.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/87">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-12T15:55:25.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/219">
@@ -19917,12 +19913,12 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T11:13:26.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/100">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:22.000Z</modified>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/221">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-18T09:34:47.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/100">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-25T08:15:22.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/220">
@@ -20137,15 +20133,11 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-28T11:35:55.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/15">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/146">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/16">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/15">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20153,7 +20145,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/148">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/16">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20161,7 +20153,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/147">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/148">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20169,15 +20161,19 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/147">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/11">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/12">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/149">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/149">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/12">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20221,15 +20217,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/26">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/157">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/27">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/26">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20237,7 +20229,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/159">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/27">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20245,11 +20237,15 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/25">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/159">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/158">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/25">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20305,7 +20301,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/124">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/245">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20313,15 +20309,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/245">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/123">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/244">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/124">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20329,11 +20317,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/35">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/244">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/126">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/123">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20341,11 +20329,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/36">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/126">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/246">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/35">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20353,11 +20341,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/249">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/246">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/33">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/36">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20365,11 +20353,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/34">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/33">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/248">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/249">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20377,15 +20365,23 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/248">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/34">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/31">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/32">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/129">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/129">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/32">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20401,15 +20397,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/131">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/252">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/251">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/131">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20417,7 +20409,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/254">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/251">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20425,7 +20417,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/253">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/254">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20433,7 +20425,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/135">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/253">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20441,11 +20433,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/255">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/134">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/135">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20453,7 +20441,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/46">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/134">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/255">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20461,7 +20453,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/136">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/46">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20469,7 +20461,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/139">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/136">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20477,11 +20469,15 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/138">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/139">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/45">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/138">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20521,7 +20517,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/59">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/223">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20529,11 +20525,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/223">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/222">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/59">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20541,11 +20533,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/225">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/104">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/222">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20553,15 +20541,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/58">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/104">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/1">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/103">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/225">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20569,11 +20553,15 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/55">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/103">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/227">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/1">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/58">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20581,11 +20569,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/226">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/227">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/105">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/55">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20593,11 +20581,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/53">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/105">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/229">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/226">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20605,7 +20593,15 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/54">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/229">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/53">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/228">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20613,7 +20609,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/228">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/54">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20637,15 +20633,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/111">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/232">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/231">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/111">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20653,7 +20645,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/234">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/231">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20661,7 +20653,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/112">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/234">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20669,11 +20661,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/115">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/236">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/112">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20681,11 +20669,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/69">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/236">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/114">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/115">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20693,11 +20681,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/238">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/114">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/117">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/69">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20705,11 +20693,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/237">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/117">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/116">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/238">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20717,7 +20705,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/64">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/116">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/237">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20725,7 +20717,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/118">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/64">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/239">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20733,7 +20729,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/239">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/118">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20753,11 +20749,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/241">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/120">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/120">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/241">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20765,19 +20761,19 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/122">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/243">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/242">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/122">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/121">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/242">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20789,11 +20785,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/79">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/203">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/203">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/79">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20801,15 +20797,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/77">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/205">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/78">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/77">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20817,7 +20809,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/207">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/78">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20825,11 +20817,15 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/76">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/207">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/206">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/76">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20881,15 +20877,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/88">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/216">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/89">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/88">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20897,7 +20889,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/218">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/89">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20905,11 +20897,15 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/217">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/218">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/87">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/217">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -20937,11 +20933,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/100">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/221">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/221">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/100">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -21150,10 +21146,6 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/188">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/lithology/187">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 

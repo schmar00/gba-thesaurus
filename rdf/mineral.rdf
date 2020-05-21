@@ -9246,10 +9246,6 @@
 	<broader xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/mineral/292"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/mineral/1">
-	<rdfs:label xml:lang="de">Gesteinsbildendes Mineral</rdfs:label>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/mineral/634">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 </rdf:Description>

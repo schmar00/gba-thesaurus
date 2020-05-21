@@ -2258,10 +2258,6 @@
 	<broader xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/structure/64"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/structure/68">
-	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="de">Tektonische Grenzflächen</label>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/structure/19">
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Magmatischer Lagenbau</prefLabel>
 </rdf:Description>
@@ -3786,10 +3782,6 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/structure/205">
 	<references xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/ref/1112"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/structure/210">
-	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="de">Benannte Tektonische Grenzflächen</label>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/structure/152">
@@ -6333,10 +6325,6 @@
 	<broader xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/structure/31"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/structure/28">
-	<exactMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://de.dbpedia.org/resource/Störung"/>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/structure/104">
 	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/haivik"/>
 </rdf:Description>
@@ -7564,10 +7552,6 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/structure/115">
 	<references xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/ref/1034"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/structure/1">
-	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="de">Geologische Struktur</label>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/structure/70">
@@ -12669,10 +12653,6 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-21T15:04:30.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/structure/28">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-26T08:38:06.467Z</modified>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/structure/27">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-04-05T09:54:24.000Z</modified>
 </rdf:Description>
@@ -13811,6 +13791,11 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/structure/190">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/structure/28">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://de.dbpedia.org/resource/Störung_(Geologie)"/>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-18T07:23:00.727Z</modified>
 </rdf:Description>
 
 </rdf:RDF>

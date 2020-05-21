@@ -1711,10 +1711,6 @@
 	<created xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-10-12T09:42:56.000Z</created>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/tectonicunit/9">
-	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/GeologicUnit/549"/>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/tectonicunit/115">
 	<narrower xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/tectonicunit/199"/>
 </rdf:Description>
@@ -25013,7 +25009,7 @@ Metasedimente, welche auf dem variszisch geprägten Untergrund abgelagert wurden
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/tectonicunit/9">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-04-24T10:41:00.000Z</modified>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-08T14:37:59.349Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/tectonicunit/191">

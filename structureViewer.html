@@ -4,16 +4,19 @@
     <meta charset=utf-8 />
     <title>Faults and thrusts</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css">
+    <link rel="stylesheet" href="css/FontAwesome/all.min.css" />
 
     <!-- Load Leaflet from CDN -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
-
-
     <!-- Load Esri Leaflet from CDN -->
     <script src="https://unpkg.com/esri-leaflet@2.3.0/dist/esri-leaflet.js"></script>
     <script src="js/ws.js"></script>
-
+    <script src="js/jszip.min.js"></script>
+    <script src="js/GeoShape_compat.js"></script>
 
     <style>
         body {
@@ -29,12 +32,6 @@
             left: 0;
         }
 
-    </style>
-</head>
-
-<body>
-
-    <style>
         #info-pane {
             position: absolute;
             top: 10px;
@@ -44,9 +41,26 @@
             background: white;
         }
 
-    </style>
+        #getFile {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            height: 70px;
+            width: 60px;
+            z-index: 500;
+            background: rgba(255, 255, 255, 0.7);
+            font-family: sans-serif;
+            font-size: 11px;
+            border: 0px;
+        }
 
+    </style>
+</head>
+
+<body>
+    <button id="getFile" onclick="downloadShape();" data-toggle="tooltip" data-placement="left" title="download shapefile" data-original-title="Tooltip on left"><i style="color: Dodgerblue;" class="fas fa-4x fa-file-download"></i></button>
     <div id="map"></div>
+    <div id="resultDiv"></div>
     <script>
         let urlParams = new URLSearchParams(window.location.search);
         let USER_LANG = (navigator.language || navigator.language).substring(0, 2);
@@ -55,19 +69,18 @@
         }
 
         if (urlParams.has('uri')) {
-
             let uri = decodeURI(urlParams.get('uri').replace(/["';><]/gi, ''));
+            let queryMap = encodeURIComponent(`PREFIX skos:<http://www.w3.org/2004/02/skos/core#>
+            SELECT *
+            WHERE {
+            ?s skos:prefLabel ?L . FILTER (lang(?L)="${USER_LANG}") .
+            BIND (IF(exists{<${uri}> skos:narrower* ?s} , ?s, 0) AS ?n)
+            }`);
 
-            let query = encodeURIComponent(`PREFIX skos:<http://www.w3.org/2004/02/skos/core#>
-                                            SELECT *
-                                            WHERE {
-                                            ?s skos:prefLabel ?L . FILTER (lang(?L)="${USER_LANG}") .
-                                            BIND (IF(exists{<${uri}> skos:narrower* ?s} , ?s, 0) AS ?n) 
-                                            }`);
-
-            fetch(`${ws.endpoint}structure?query=${query}&format=application/json`)
+            fetch(`${ws.endpoint}structure?query=${queryMap}&format=application/json`)
                 .then(res => res.json())
                 .then(jsonData => {
+                    //console.log(jsonData);
                     let narrower = jsonData.results.bindings.map(concept => (concept.n.value));
                     let faults = new Map();
                     (jsonData.results.bindings).forEach(concept => faults.set(concept.s.value, concept.L.value));
@@ -111,6 +124,90 @@
                 });
         }
 
+        function downloadShape() {
+            //console.log('click');
+            let urlParams = new URLSearchParams(window.location.search);
+            let USER_LANG = (navigator.language || navigator.language).substring(0, 2);
+            if (urlParams.has('lang')) {
+                USER_LANG = urlParams.get('lang');
+            }
+
+            if (urlParams.has('uri')) {
+                let uri = decodeURI(urlParams.get('uri').replace(/["';><]/gi, ''));
+
+                let queryDownLoad = encodeURIComponent(`PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+                            PREFIX dcterms:<http://purl.org/dc/terms/>
+                            PREFIX skos:<http://www.w3.org/2004/02/skos/core#>
+                            SELECT distinct ?s ?Label
+                            (group_concat(distinct ?ax; separator = "; ") as ?Synonyms)
+                            ?Description (group_concat(distinct ?r; separator = "; ") as ?References)
+                            (min(strbefore(str(?m),"T")) as ?Modified)
+                            (group_concat(distinct ?Map; separator = "; ") as ?Mapping)
+                            (group_concat(distinct ?pic; separator = "; ") as ?Picture)
+                            WHERE {
+                            {values ?map {skos:exactMatch skos:closeMatch skos:narrowMatch skos:broadMatch}
+                            <${uri}> skos:narrower* ?s .
+                            ?s skos:prefLabel ?p; skos:prefLabel ?px . filter(lang(?p)="en") filter(lang(?px)="${USER_LANG}")
+                            bind(coalesce(?px, ?p, "") as ?Label)
+                            optional {?s skos:altLabel ?ax filter(lang(?ax)="${USER_LANG}")}
+                            optional {?s skos:definition ?d filter(lang(?d)="en")}
+                            optional {?s skos:definition ?dx filter(lang(?dx)="${USER_LANG}")}
+                            bind(coalesce(?dx, ?d, "") as ?Description)
+                            optional {?s dcterms:modified ?m}
+                            optional {?s dcterms:references ?r}
+                            optional {?s ?map ?Map}
+                            optional {?s foaf:depiction ?pic}
+                            } }
+                            group by ?s ?Label ?Description`);
+
+                fetch(`${ws.endpoint}structure?query=${queryDownLoad}&format=application/json`)
+                    .then(res => res.json())
+                    .then(jsonData => {
+                        //console.log(jsonData);
+                        /*let longest = jsonData.results.bindings.map(c => c.Description.value).reduce((a, b) => a.length > b.length ? a : b);
+                        console.log(Math.ceil(longest.length / 255));
+                        */
+
+                        let concepts = jsonData.results.bindings.map(c => ({
+                            uri: c.s.value,
+                            Label: c.Label.value,
+                            Synonyms: c.Synonyms.value,
+                            Description: c.Description.value,
+                            References: c.References.value,
+                            Modified: c.Modified.value,
+                            Mapping: c.Mapping.value,
+                            Picture: c.Picture.value
+                        }));
+                        fetch(`https://gisgba.geologie.ac.at/arcgis/rest/services/G1000/AT_GBA_GEOERA_TEKT_TEST/FeatureServer/0/query?where=(THESURL='${concepts.map(a => a.uri).join("'+or+THESURL='")}')&outFields=*&returnGeometry=true&f=geojson`)
+                            .then(res => res.json())
+                            .then(data => {
+                                for (i of data.features) {
+                                    let o = concepts.find(a => a.uri == i.properties.THESURL);
+                                    i.properties.Label = o.Label;
+                                    i.properties.Description = o.Description;
+                                    i.properties.Synonyms = o.Synonyms;
+                                    i.properties.References = o.References;
+                                    i.properties.Modified = o.Modified;
+                                    i.properties.Mapping = o.Mapping;
+                                    i.properties.Picture = o.Picture;
+
+                                    if (i.geometry.type == 'LineString') {
+                                        i.geometry.type = 'MultiLineString';
+                                        i.geometry.coordinates = [i.geometry.coordinates];
+                                    }
+                                }
+                                //console.log(data);
+                                let mainConcept = concepts.find(a => a.uri == uri).Label;
+                                try {
+                                    GeoShape.transformAndDownload(data, mainConcept);
+                                    //alert(mainConcept + ".zip downloaded");
+                                } catch (e) {
+                                    alert("Error: " + e);
+                                }
+                            });
+                    });
+            }
+        }
     </script>
 
 </body>

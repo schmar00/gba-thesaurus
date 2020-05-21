@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#">
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/64">
 	<exactMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/salt"/>
@@ -5540,8 +5545,8 @@
 	<created xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-11-20T08:04:41.000Z</created>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/0">
-	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="de">Mineralische Rohstoffe</label>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/27">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/97">
@@ -5572,228 +5577,212 @@
 	<created xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-11-20T08:04:42.000Z</created>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/0">
-	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Mineral raw materials</label>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/20">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/alunite">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Alunite</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/21">
+	<colourHexCode xmlns="http://dbpedia.org/ontology/">#D8D899</colourHexCode>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/anhydrite">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Anhydrite</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/27">
+	<colourHexCode xmlns="http://dbpedia.org/ontology/">#FFFFB2</colourHexCode>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/anthracite">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Anthracite</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/52">
+	<colourHexCode xmlns="http://dbpedia.org/ontology/">#7FFF00</colourHexCode>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/antimony">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Antimony</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/31">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/f42e4ac90a964ffc9866a5456a9177fc"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/arsenic">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Arsenic</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/32">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/fc162af7eabf493a8f27ad26be2103e8"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/asbestos">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Asbestos</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/42">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/fc50ec4320784ae490b55ee7f4ab1181"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/baryte">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Baryte</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/30">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/00f9730de72e41608f3d53f501fda376"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/bauxite">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Bauxite</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/12">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/047a0f58e35e49d5b019622942dc2713"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/bentonite">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Bentonite</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/100">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/07efa3ed08734cddaccd97a9bfec320b"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/beryllium">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Beryllium</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/78">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/097a838f0cbd4f5c9ab471fe9751628b"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/bismuth">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Bismuth</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/33">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/09d1a9fd991c4d03ba9e3bb67d4169a5"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/blackCoal">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Blackcoal</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/66">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/0b2c1c3524ca48f4ac05defd5cc06f72"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/brownCoal">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Browncoal</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/26">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/0cc46f4e90824191874b7de4d96e2dff"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chromium">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Chromium</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/56">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/14fc11c65f6c49d9bbb4975bf68e0b0b"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/clay">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Clay</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/79">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/1a5c5aabee19470b8771af8e659250ce"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/cobalt">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Cobalt</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/65">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/2312c958e04b48c2b5786bbe8625a502"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/copper">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Copper</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/28">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/26c1165974264c77989f0cd19b7480b9"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/diatomite">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Diatomite</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/10">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/270bc8187e884dc2b6c1d2e7c91d4fd5"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/feldspar">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Feldspar</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/80">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/272e8ce452ca4ff0825199cfe92349f3"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/ferrousMetal">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Ferrousmetal</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/67">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/2b5660801d7049a4b0a1923d9f86d30e"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/fluorite">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Fluorite</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/44">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/2efe76492bc04cefaa356c8ffa823f09"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/gaseousHydrocarbons">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">gaseous Hydrocarbons</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/64">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/33083d1362bc499c87ebbed12fafff41"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/gold">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Gold</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/54">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/38e892e9293242739e1da11f94d57e17"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/graphite">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Graphite</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/72">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/4c465c1f4e254e35b0d8afdd782afcba"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/gypsum">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Gypsum</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/102">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/53be33f8100546b8b62f2f028e2b24de"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/hematite">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Hematite</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/24">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/5894eac4572e45fc82d18cb84cb45059"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/industrialMineral">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">industrial Mineral</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/45">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/5bc1562bb3a3415d9cb9146fa15e03e4"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/iron">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Iron</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/83">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/6223f81539fd4efe80f175ad14079198"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/kaolin">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Kaolin</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/29">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/6585491a3d9a4255bdbe492f9cb6b2a8"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/kyanite">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Kyanite</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/88">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/6a8b6452897042a7975e4282b9d79463"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/lazulite">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Lazulite</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/85">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/6ae77034d24349f8964422777d02e103"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/lead">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Lead</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/20">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/71b5acd42e5447d491460e9dd6dbd309"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/lithium">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Lithium</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/18">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/8112be77cc4a4f9a9eda9de6b667d476"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/magnesite">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Magnesite</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/36">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/8152046a5570418e8fe18093b2deabf7"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/magnetite">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Magnetite</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/101">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/85fed37e2fb34ba7aa1fb64901a4f1f2"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/manganese">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Manganese</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/57">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/897243d0506e4b5c8472381f9245c7e4"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/mercury">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Mercury</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/47">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/9651591da1af46459c3a35d53616dd9c"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/mica">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Mica</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/48">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/986183dea9144a00b6cb22cbd104550c"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/molybdenum">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Molybdenum</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/17">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/a50e743efc4d40c1bc2fe48fa43f948e"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/nickel">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Nickel</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/55">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/b237813ff76947b69741dd1422f070d4"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/oil">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Oil</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/19">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/b6b54f82f67a42fcb77d5feb3af60a6c"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/oilShale">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Oilshale</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/27">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/b6be729544b14a64aa28bd958a8cf12b"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/phosphateRock">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">phosphate Rock</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/41">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/c78cdd0fc5034d5698211f88176a2cf5"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/preciousMetal">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">precious Metal</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/69">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/c84a7cce45464b8983adc217be4b853b"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/pyrite">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Pyrite</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/50">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/d30fd1ca8f12432385fe2c5d86b1550b"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/quartz">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Quartz</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/11">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/d45619ffb33d456f931814b681854693"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/salt">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Salt</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/91">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/dd0986675f054f3b99727e5fed76411d"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/silica">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Silica</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/37">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/dfaaee654cfa42c593c39e450944d35b"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/silver">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Silver</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/40">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/e57eaf54c22348a2a2f3b51aeee36b67"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sulphur">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Sulphur</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/59">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/ef5b991caf664e97a05ad92cc1a7cdb0"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/talc">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Talc</prefLabel>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tungsten">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Tungsten</prefLabel>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/uranium">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Uranium</prefLabel>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/vermiculite">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Vermiculite</prefLabel>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/CommodityCodeValue/zinc">
-	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Zinc</prefLabel>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/98">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://w3id.org/mica/ontology/MicaOntology/f2daec8f9b29437195bedab7f533cbe7"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/65">
@@ -5802,6 +5791,14 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/98">
 	<colourHexCode xmlns="http://dbpedia.org/ontology/">#4C9966</colourHexCode>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/28">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/29">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/78">
@@ -5924,60 +5921,60 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-11-20T08:04:41.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/5">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-05T15:40:19.000Z</modified>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/69">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-10T11:44:04.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/5">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-05T15:40:19.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/6">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-06-06T07:27:02.949Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/3">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-13T15:52:46.000Z</modified>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/67">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-10T11:40:20.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/4">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-13T15:52:25.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/3">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-13T15:52:46.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/68">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-13T15:52:46.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/65">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-10T11:25:44.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/4">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-13T15:52:25.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/9">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-06T14:32:51.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/66">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-13T09:29:27.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/65">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-10T11:25:44.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/63">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-13T09:26:17.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/66">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-13T09:29:27.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/7">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-06T12:09:41.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/64">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-10T11:27:32.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/63">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-13T09:26:17.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/8">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-06T14:28:37.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/64">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-10T11:27:32.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/61">
@@ -6116,20 +6113,20 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-07T08:28:24.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/98">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-10T11:24:10.000Z</modified>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/10">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-10T12:56:36.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/99">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-07T14:24:53.000Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/98">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-10T11:24:10.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/11">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-07T08:25:25.000Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/99">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-07T14:24:53.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/96">
@@ -6340,11 +6337,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/69">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/5">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/5">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/69">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -6352,15 +6349,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/67">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/3">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/4">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/67">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -6368,7 +6361,7 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/65">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/4">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -6376,11 +6369,11 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/66">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/65">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/63">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/66">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -6388,11 +6381,15 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/8">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/63">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/64">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/8">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -6528,19 +6525,19 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/10">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/98">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/99">
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/10">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/11">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/99">
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
@@ -6616,32 +6613,68 @@
 	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/20">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/98">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.wikidata.org/entity/Q237883"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/29">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/57">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.wikidata.org/entity/Q40861"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/39">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.wikidata.org/entity/Q1134814"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/19">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.wikidata.org/entity/Q221378"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/30">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.wikidata.org/entity/Q380149"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/78">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.wikidata.org/entity/Q182458"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/102">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.wikidata.org/entity/Q184624"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/27">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.wikidata.org/entity/Q34679"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/28">
-	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/40">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.wikidata.org/entity/Q193414"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/59">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.wikidata.org/entity/Q1424327"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/45">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.wikidata.org/entity/Q5309"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/100">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.wikidata.org/entity/Q1070438"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/80">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.wikidata.org/entity/Q732607"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/72">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.wikidata.org/entity/Q102078"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/21">
-	<colourHexCode xmlns="http://dbpedia.org/ontology/">#D8D899</colourHexCode>
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.wikidata.org/entity/Q191704"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/27">
-	<colourHexCode xmlns="http://dbpedia.org/ontology/">#FFFFB2</colourHexCode>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/52">
-	<colourHexCode xmlns="http://dbpedia.org/ontology/">#7FFF00</colourHexCode>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/98">
+	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.eagle-network.eu/voc/material/lod/51"/>
 </rdf:Description>
 
 </rdf:RDF>
