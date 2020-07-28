@@ -197,10 +197,10 @@ var ShapeRecord = function () {
         this.partIndices = [];
         this.partCount = 0;
 
-        this.X1 = 9999;
-        this.X2 = -9999;
-        this.Y1 = -9999;
-        this.Y2 = 9999;
+        this.X1 = 16.288516;
+        this.X2 = 9.797679;
+        this.Y1 = 46.442824;
+        this.Y2 = 48.708890;
 
         fileGen.useCSV = false;
         fileGen.records.push(this);
