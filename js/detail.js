@@ -18,7 +18,7 @@ const Uri = {
     SYNONYMS: [BaseUri.skos + 'altLabel'],
     NOTATION: [BaseUri.skos + 'notation'],
     GBA_STATUS: [BaseUri.gba + 'status'],
-    //GBA_DATAVIEWER: [BaseUri.gba + 'DataViewer'],
+    GBA_DATAVIEWER: [BaseUri.gba + 'mapViewer'],
     DESCRIPTION_1: [BaseUri.skos + 'definition'],
     DESCRIPTION_2: [BaseUri.skos + 'scopeNote', BaseUri.dcterms + 'description', BaseUri.dcterms + 'abstract'],
     CITATION: [BaseUri.dcterms + 'bibliographicCitation'],
@@ -95,12 +95,17 @@ var detail = {
                         this.insertApp('Database', 'queries', `${ws.endpoint}${uri.split('/')[3]}`, 'list-alt'); //&list=${encodeURIComponent(pL)}&lang=${lang.ID}`, 'list-alt');
                         page.updateSharingTexts(pL);
                         break;
-                    case 'dataViewer':
-                        /*if (uri.search('/structure/') == -1) {
+                    case 'dataViewer': //*********************########################################################
+                        let projDV_Arno = ['GeologicUnit', 'lithology', 'GeologicTimeScale'];
+
+                        if (projDV_Arno.includes(uri.split('\/')[3])) {
                             this.insertApp('Data', 'Viewer', 'http://gisgba.geologie.ac.at/DataViewer/tdv/Index.aspx?url=' + uri + '&lang=' + lang.ID, 'map');
-                          } else {
-                            this.insertApp('Structure', 'Viewer', 'structureViewer.html?uri=' + uri + '&lang=' + lang.ID, 'map');
-                          }*/
+                        } else if (uri.split('\/')[3] == 'structure') {
+                            this.insertApp('Map', 'download', 'structureViewer.html?uri=' + uri + '&lang=' + lang.ID, 'map');
+                        } else if (uri.split('\/')[3] == 'minres') {
+                            this.insertApp('Map', 'download', 'minresViewer.html?uri=' + uri + '&lang=' + lang.ID, 'map');
+                        }
+
                         break;
                     case 'picture':
                         ul.forEach(a => this.insertApp('text1', 'text2', $(a).attr('href'), 'picture'));
@@ -193,13 +198,7 @@ var detail = {
                                     this.insertApp('type', 'location', 'http://www.google.com/maps/place/' + coord.lat + 'N+' + coord.long + 'E/@47.6381118,13.6028916,7z/data=!4m2!3m1!1s0x0:0x0', 'map-pin');
                                     coord = {};
                                 }*/
-                if (i == BaseUri.schema + 'mainEntityOfPage') {
-                    if (ul.values().next().value.search('/structure/') == -1) {
-                        this.insertApp('Data', 'Viewer', ul.values().next().value.split('\"')[1] + '&lang=' + lang.ID, 'map');
-                    } else {
-                        this.insertApp('Structure', 'Viewer', 'structureViewer.html?uri=' + ul.values().next().value.split('\"')[1].split('=')[1] + '&lang=' + lang.ID, 'map');
-                    }
-                }
+
                 if (i == BaseUri.dbpo + 'colourHexCode') {
                     this.insertApp('<span class="colorBox" style="background:' + ul.values().next().value + ';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>Color', ul.values().next().value, 'https://www.w3schools.com/colors/colors_converter.asp?color=' + ul.values().next().value.replace('#', ''), '');
                 }
@@ -462,7 +461,7 @@ var detail = {
         gbaStatus: Uri.GBA_STATUS,
         abstract: Uri.DESCRIPTION_1,
         citation: Uri.REF_LINKS,
-        //dataViewer: Uri.GBA_DATAVIEWER,
+        dataViewer: Uri.GBA_DATAVIEWER,
         relatedConcepts: [...Uri.RELATIONS_1, ...Uri.RELATIONS_2]
     },
     FRONT_LIST_EMBEDDED: {

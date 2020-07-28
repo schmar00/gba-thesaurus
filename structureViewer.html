@@ -179,8 +179,12 @@
                             Picture: c.Picture.value
                         }));
                         fetch(`https://gisgba.geologie.ac.at/arcgis/rest/services/G1000/AT_GBA_GEOERA_TEKT_TEST/FeatureServer/0/query?where=(THESURL='${concepts.map(a => a.uri).join("'+or+THESURL='")}')&outFields=*&returnGeometry=true&f=geojson`)
-                            .then(res => res.json())
+                            .then(res => res.text())
                             .then(data => {
+                             data = JSON.parse(data.replace('EPSG:4326', 'GEOGCS[WGS 84,DATUM[WGS_1984,SPHEROID[WGS 84,6378137,298.257223563,AUTHORITY[EPSG,7030]],AUTHORITY[EPSG,6326]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.017453292519943295,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4326]]'));
+
+
+
                                 for (i of data.features) {
                                     let o = concepts.find(a => a.uri == i.properties.THESURL);
                                     i.properties.Label = o.Label;
@@ -196,7 +200,7 @@
                                         i.geometry.coordinates = [i.geometry.coordinates];
                                     }
                                 }
-                                //console.log(data);
+                                console.log(data);
                                 let mainConcept = concepts.find(a => a.uri == uri).Label;
                                 try {
                                     GeoShape.transformAndDownload(data, mainConcept);
