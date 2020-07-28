@@ -104,6 +104,8 @@ var detail = {
                             this.insertApp('Map', 'download', 'structureViewer.html?uri=' + uri + '&lang=' + lang.ID, 'map');
                         } else if (uri.split('\/')[3] == 'minres') {
                             this.insertApp('Map', 'download', 'minresViewer.html?uri=' + uri + '&lang=' + lang.ID, 'map');
+                        } else if (uri.split('\/')[3] == 'mineral') {
+                            this.insertApp('Map', 'download', 'mineralViewer.html?uri=' + uri + '&lang=' + lang.ID, 'map');
                         }
 
                         break;
