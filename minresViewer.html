@@ -145,7 +145,7 @@
                     let searchTerms = vocData.map(a => a.searchTerm); //console.log(searchTerms);
                     let queryMap = `(Wertstoffe like '%${searchTerms.join("%')or(Wertstoffe like '%")}%')`;
                     //console.log(queryMap);
-                    fetch(`http://gisgba.geologie.ac.at/arcgis/rest/services/test/TEST_WFS_IRIS_Lagerstaetten_Reviere/MapServer/0/query?where=${queryMap}&outFields=G01.rst.IRIS_v.HAUPTROHSTOFF,G01.RST.IRIS_P.ID,G01.rst.IRIS_v.VORK_NAME,G01.rst.IRIS_v.BEZIRKNAME,G01.rst.IRIS_v.BEZIRK_URL,G01.rst.IRIS_v.ART_TXT,G01.rst.IRIS_v.FORM_TXT,G01.rst.IRIS_v.TEKT_EINH,G01.rst.IRIS_v.WERTSTOFFE,G01.rst.IRIS_v.MINERALIEN,G01.rst.IRIS_v.STATUS_TXT&f=geojson`)
+                    fetch(`https://gisgba.geologie.ac.at/arcgis/rest/services/test/TEST_WFS_IRIS_Lagerstaetten_Reviere/MapServer/0/query?where=${queryMap}&outFields=G01.rst.IRIS_v.HAUPTROHSTOFF,G01.RST.IRIS_P.ID,G01.rst.IRIS_v.VORK_NAME,G01.rst.IRIS_v.BEZIRKNAME,G01.rst.IRIS_v.BEZIRK_URL,G01.rst.IRIS_v.ART_TXT,G01.rst.IRIS_v.FORM_TXT,G01.rst.IRIS_v.TEKT_EINH,G01.rst.IRIS_v.WERTSTOFFE,G01.rst.IRIS_v.MINERALIEN,G01.rst.IRIS_v.STATUS_TXT&f=geojson`)
                         .then(res => res.json())
                         .then(data => {
                             wfsData = data;
