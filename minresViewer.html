@@ -59,11 +59,15 @@
         }
 
         .minres2 {
-            color: red;
+            color: darkorange;
         }
 
         .pop {
-            font-size: 70%;
+            font-size: 100%;
+        }
+
+        #map {
+            background: white;
         }
     </style>
 </head>
@@ -84,12 +88,12 @@
 
         let map = L.map('map').setView([47.7, 13.5], 7);
         const mainIcon = L.divIcon({
-            html: '<i class="fas fa-circle fa-xs"></i>',
+            html: '<i class="fas fa-circle"></i>',
             iconSize: [20, 20],
             className: 'minres1'
         });
         const sideIcon = L.divIcon({
-            html: '<i class="far fa-circle fa-xs"></i>',
+            html: '<i class="fas fa-dot-circle"></i>',
             iconSize: [10, 10],
             className: 'minres2'
         });
@@ -168,7 +172,7 @@
                                             <h5>${a.properties['G01.rst.IRIS_v.VORK_NAME']}</h5>
                                             ${bn}                                         <strong>${a.properties['G01.rst.IRIS_v.ART_TXT']}</strong> / ${a.properties['G01.rst.IRIS_v.FORM_TXT']}<br>
                                             ${a.properties['G01.rst.IRIS_v.TEKT_EINH']}<br>
-                                            <strong>${a.properties['G01.rst.IRIS_v.HAUPTROHSTOFF']}</strong> / ${a.properties['G01.rst.IRIS_v.WERTSTOFFE']} / ${a.properties['G01.rst.IRIS_v.MINERALIEN']}<br>
+                                            <strong>${a.properties['G01.rst.IRIS_v.HAUPTROHSTOFF']}</strong> / ${a.properties['G01.rst.IRIS_v.WERTSTOFFE']}<br><strong>Mineralien</strong>: ${a.properties['G01.rst.IRIS_v.MINERALIEN']}<br>
                                             <strong>Status</strong>: ${a.properties['G01.rst.IRIS_v.STATUS_TXT']}
                                             </div>`);
                             }
@@ -183,9 +187,9 @@
             wfsData = JSON.parse(JSON.stringify(wfsData).replace(/G01.rst.IRIS_v./g, '').replace(/G01.RST.IRIS_P./g, '').replace('EPSG:4326', 'GEOGCS[WGS 84,DATUM[WGS_1984,SPHEROID[WGS 84,6378137,298.257223563,AUTHORITY[EPSG,7030]],AUTHORITY[EPSG,6326]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.017453292519943295,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4326]]').replace(/SCHAUBERGWERK/g, 'Museum').replace(/\_TXT/g, '').replace(/HAUPTROHSTOFF/g, 'Label'));
             //console.log(wfsData);
             let mainConcept = vocData.find(a => a.uri == uri).Label;
-            let langPrefix = ['Hauptrohstoff','u.a.'];
-            if(USER_LANG == 'en'){
-                langPrefix = ['Main resource','i.a.'];
+            let langPrefix = ['Hauptrohstoff', 'u.a.'];
+            if (USER_LANG == 'en') {
+                langPrefix = ['Main resource', 'i.a.'];
             }
 
             for (i of wfsData.features) {

@@ -59,12 +59,17 @@
         }
 
         .minres2 {
-            color: red;
+            color: darkorange;
         }
 
         .pop {
-            font-size: 70%;
+            font-size: 100%;
         }
+
+        #map {
+            background: white;
+        }
+
     </style>
 </head>
 
@@ -84,13 +89,11 @@
 
         let map = L.map('map').setView([47.7, 13.5], 7);
         const mainIcon = L.divIcon({
-            html: '<i class="fas fa-circle fa-xs"></i>',
-            iconSize: [20, 20],
+            html: '<i class="fas fa-circle"></i>',
             className: 'minres1'
         });
         const sideIcon = L.divIcon({
-            html: '<i class="far fa-circle fa-xs"></i>',
-            iconSize: [10, 10],
+            html: '<i class="fas fa-dot-circle"></i>',
             className: 'minres2'
         });
 
@@ -169,10 +172,10 @@
                                     }).addTo(map)
                                     .bindPopup(`<div class="pop">
                                             <h5>${a.properties['G01.rst.IRIS_v.VORK_NAME']}</h5>
-                                            ${bn}                                         <strong>${a.properties['G01.rst.IRIS_v.ART_TXT']}</strong> / ${a.properties['G01.rst.IRIS_v.FORM_TXT']}<br>
-                                            ${a.properties['G01.rst.IRIS_v.TEKT_EINH']}<br>
-                                            <strong>${a.properties['G01.rst.IRIS_v.HAUPTROHSTOFF']}</strong> / ${a.properties['G01.rst.IRIS_v.WERTSTOFFE']} / ${a.properties['G01.rst.IRIS_v.MINERALIEN']}<br>
-                                            <strong>Status</strong>: ${a.properties['G01.rst.IRIS_v.STATUS_TXT']}
+                                            ${a.properties['G01.rst.IRIS_v.MINERALIEN']}<hr>
+                                            ${bn}
+                                            ${a.properties['G01.rst.IRIS_v.ART_TXT']} / ${a.properties['G01.rst.IRIS_v.FORM_TXT']}<br>
+                                            ${a.properties['G01.rst.IRIS_v.HAUPTROHSTOFF']} / ${a.properties['G01.rst.IRIS_v.WERTSTOFFE']}<br>
                                             </div>`);
                             }
                         });
