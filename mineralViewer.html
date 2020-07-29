@@ -70,12 +70,24 @@
             background: white;
         }
 
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 1000;
+            color: aqua;
+            width: 3rem;
+            height: 3rem;
+        }
     </style>
 </head>
 
 <body>
     <button id="getFile" onclick="downloadShape();" data-toggle="tooltip" data-placement="left" title="download shapefile" data-original-title="Tooltip on left"><i style="color: Dodgerblue;" class="fas fa-4x fa-file-download"></i></button>
     <div id="map"></div>
+    <div id="loading" class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
     <div id="resultDiv"></div>
     <script>
         let urlParams = new URLSearchParams(window.location.search);
@@ -87,7 +99,7 @@
         let vocData = [];
         let wfsData = {};
 
-        let map = L.map('map').setView([47.7, 13.5], 7);
+        let map = L.map('map').setView([47.7, 13.5], 8);
         const mainIcon = L.divIcon({
             html: '<i class="fas fa-circle"></i>',
             className: 'minres1'
@@ -178,6 +190,7 @@
                                             ${a.properties['G01.rst.IRIS_v.HAUPTROHSTOFF']} / ${a.properties['G01.rst.IRIS_v.WERTSTOFFE']}<br>
                                             </div>`);
                             }
+                            $('#loading').hide();
                         });
                 });
         } else {

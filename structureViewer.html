@@ -54,12 +54,24 @@
             border: 0px;
         }
 
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 1000;
+            color: aqua;
+            width: 3rem;
+            height: 3rem;
+        }
     </style>
 </head>
 
 <body>
     <button id="getFile" onclick="downloadShape();" data-toggle="tooltip" data-placement="left" title="download shapefile" data-original-title="Tooltip on left"><i style="color: Dodgerblue;" class="fas fa-4x fa-file-download"></i></button>
     <div id="map"></div>
+    <div id="loading" class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
     <div id="resultDiv"></div>
     <script>
         let urlParams = new URLSearchParams(window.location.search);
@@ -87,6 +99,12 @@
 
                     let map = L.map('map').setView([47.7, 13.5], 7);
                     L.esri.basemapLayer('Topographic').addTo(map);
+
+                    /*L.tileLayer("https://{s}.wien.gv.at/basemap/bmapgrau/normal/google3857/{z}/{y}/{x}.png", {
+                            subdomains: ['maps', 'maps1', 'maps2', 'maps3', 'maps4'],
+                            attribution: '&copy; <a href="http://basemap.at">Basemap.at</a>, <a href="http://www.geologie.ac.at">Geologie.ac.at</a>'
+                    }).addTo(map);*/
+
 
                     let geology = L.esri.featureLayer({
                         url: 'https://gisgba.geologie.ac.at/arcgis/rest/services/G1000/AT_GBA_GEOERA_TEKT_TEST/FeatureServer/0',
@@ -121,6 +139,7 @@
                     geology.on('click', function(e) {
                         window.open("index.html?uri=" + e.layer.feature.properties.THESURL + "&lang=" + USER_LANG, "_self");
                     });
+                    $('#loading').hide();
                 });
         }
 
@@ -181,7 +200,7 @@
                         fetch(`https://gisgba.geologie.ac.at/arcgis/rest/services/G1000/AT_GBA_GEOERA_TEKT_TEST/FeatureServer/0/query?where=(THESURL='${concepts.map(a => a.uri).join("'+or+THESURL='")}')&outFields=*&returnGeometry=true&f=geojson`)
                             .then(res => res.text())
                             .then(data => {
-                             data = JSON.parse(data.replace('EPSG:4326', 'GEOGCS[WGS 84,DATUM[WGS_1984,SPHEROID[WGS 84,6378137,298.257223563,AUTHORITY[EPSG,7030]],AUTHORITY[EPSG,6326]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.017453292519943295,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4326]]'));
+                                data = JSON.parse(data.replace('EPSG:4326', 'GEOGCS[WGS 84,DATUM[WGS_1984,SPHEROID[WGS 84,6378137,298.257223563,AUTHORITY[EPSG,7030]],AUTHORITY[EPSG,6326]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.017453292519943295,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4326]]'));
 
 
 
@@ -214,6 +233,4 @@
         }
     </script>
 
-</body>
-
-</html>
+</body></html>
