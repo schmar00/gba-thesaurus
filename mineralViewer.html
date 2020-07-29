@@ -79,6 +79,11 @@
             width: 3rem;
             height: 3rem;
         }
+
+        .irisIcon {
+            width: 14px;
+        }
+
     </style>
 </head>
 
@@ -181,9 +186,11 @@
 
                                 L.marker([a.geometry.coordinates[1], a.geometry.coordinates[0]], {
                                         icon: icon
-                                    }).addTo(map)
+                                    }).addTo(map) //https://geolba.maps.arcgis.com/apps/webappviewer/images/shortcut.ico
                                     .bindPopup(`<div class="pop">
-                                            <h5>${a.properties['G01.rst.IRIS_v.VORK_NAME']}</h5>
+                                            <h5><img class="irisIcon" src="https://geolba.maps.arcgis.com/apps/webappviewer/images/shortcut.ico" >
+                                            <a href="https://geolba.maps.arcgis.com/apps/webappviewer/index.html?id=ef8095943a714d7893d41f02ec9c156d&marker=${a.geometry.coordinates[0]};${a.geometry.coordinates[1]};;;;${a.properties['G01.rst.IRIS_v.VORK_NAME']}&level=11">
+                                                ${a.properties['G01.rst.IRIS_v.VORK_NAME']}</a></h5>
                                             ${a.properties['G01.rst.IRIS_v.MINERALIEN']}<hr>
                                             ${bn}
                                             ${a.properties['G01.rst.IRIS_v.ART_TXT']} / ${a.properties['G01.rst.IRIS_v.FORM_TXT']}<br>
@@ -242,6 +249,9 @@
                 alert("Error: " + e);
             }
         }
+
     </script>
 
-</body></html>
+</body>
+
+</html>
