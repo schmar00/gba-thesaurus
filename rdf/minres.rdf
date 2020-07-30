@@ -5802,11 +5802,11 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/78">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-06T13:11:13.000Z</modified>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-28T13:18:58.669Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/79">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-06T13:39:36.000Z</modified>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-28T13:20:13.642Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/76">
@@ -5838,7 +5838,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/71">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-10T11:46:23.000Z</modified>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-28T13:15:16.969Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/89">
@@ -5850,7 +5850,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/88">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-06T14:21:22.000Z</modified>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-28T13:17:02.014Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/85">
@@ -5870,15 +5870,15 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/81">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-06T14:17:45.000Z</modified>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-28T13:20:33.798Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/82">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-06T14:20:13.000Z</modified>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-28T13:20:42.655Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/80">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-06T14:16:23.000Z</modified>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-28T13:19:22.725Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/58">
@@ -5926,7 +5926,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/5">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-05T15:40:19.000Z</modified>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-28T13:14:23.503Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/6">
@@ -5942,7 +5942,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/68">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-13T15:52:46.000Z</modified>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-28T13:14:51.323Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/4">
@@ -5970,7 +5970,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/8">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-06T14:28:37.000Z</modified>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-28T13:15:38.863Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/64">
@@ -5990,7 +5990,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/1">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-13T15:51:22.000Z</modified>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-27T14:03:45.752Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/2">
@@ -6041,8 +6041,8 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-07T08:23:27.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/102">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-28T07:59:40.570Z</modified>
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/80">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/38">
@@ -6138,7 +6138,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/94">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-06T13:35:13.000Z</modified>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-28T13:17:19.994Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/95">
@@ -6158,11 +6158,11 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/91">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-06T14:23:22.000Z</modified>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-28T13:19:59.787Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/18">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-13T09:27:28.000Z</modified>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-28T13:20:05.631Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/19">
@@ -6170,11 +6170,11 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/16">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-07T12:36:04.000Z</modified>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-28T13:17:11.553Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/17">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-06T13:00:51.000Z</modified>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-28T13:18:13.607Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/25">
@@ -6202,7 +6202,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/20">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-07T08:34:48.000Z</modified>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-28T13:14:01.913Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/29">
@@ -6675,6 +6675,266 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/minres/98">
 	<closeMatch xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.eagle-network.eu/voc/material/lod/51"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/1">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/76">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/73">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/29">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/32">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/72">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/30">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/31">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/87">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/4">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/9">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/40">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/49">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/10">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/97">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/60">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/41">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/42">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/86">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/44">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/56">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/7">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/45">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/48">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/84">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/2">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/54">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/89">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/75">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/11">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/12">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/13">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/19">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/59">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/69">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/70">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/98">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/65">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/74">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/64">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/63">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/6">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/100">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/66">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/77">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/93">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/67">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/15">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/3">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/20">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/5">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/68">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/71">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/8">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/88">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/16">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/94">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/17">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/102">
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-28T13:19:48.882Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/78">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/91">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/18">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/79">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/81">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/minres/82">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
 </rdf:Description>
 
 </rdf:RDF>

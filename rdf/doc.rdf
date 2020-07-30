@@ -2,6 +2,18 @@
 <rdf:RDF
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/157">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/17">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/78">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/76">
 	<created xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-12-09T13:42:17.000Z</created>
 </rdf:Description>
@@ -20,6 +32,10 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/66">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/5">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/2">
@@ -106,6 +122,10 @@
 	<deprecated xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/74">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/0">
 	<hasTopConcept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/73"/>
 </rdf:Description>
@@ -160,6 +180,10 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/78">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/10">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/0">
@@ -244,6 +268,10 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/81">
 	<created xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-01-09T13:16:55.000Z</created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/13">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/77">
@@ -363,8 +391,16 @@
 	<hasVersion xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</hasVersion>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/50">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/0">
 	<hasTopConcept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/161">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/42">
@@ -399,6 +435,10 @@
 	<created xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-27T14:11:46.000Z</created>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/62">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/78">
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Building materials of monuments</prefLabel>
 </rdf:Description>
@@ -417,6 +457,10 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/31">
 	<narrower xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/32"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/45">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/23">
@@ -483,9 +527,17 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/164">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/82">
 	<broader xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/38"/>
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Concept labels in square brackets [ ] ?</prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/49">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/50">
@@ -514,6 +566,10 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/19">
 	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">PREFIX skos:&lt;http://www.w3.org/2004/02/skos/core#&gt;&amp;#xa;PREFIX geo:&lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;&amp;#xa;&amp;#xa;SELECT &amp;#xa;?URI ?prefLabelDE ?lat ?long&amp;#xa;WHERE&amp;#xa;{&amp;#xa;?URI a skos:Concept . ?URI skos:prefLabel ?prefLabelDE . FILTER(lang(?prefLabelDE)='de') .&amp;#xa;?URI geo:lat ?lat  . ?URI geo:long ?long&amp;#xa;}&amp;#xa;ORDER BY ?prefLabelDE</definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/37">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/32">
@@ -556,6 +612,10 @@
 	<broader xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/40"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/82">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/16">
 	<hasVersion xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</hasVersion>
 </rdf:Description>
@@ -582,6 +642,10 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/2">
 	<narrower xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/25">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/166">
@@ -628,6 +692,10 @@
 	<description xmlns="http://purl.org/dc/terms/" xml:lang="de">Organisation</description>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/65">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/42">
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Was ist Linked Open Data?</prefLabel>
 </rdf:Description>
@@ -652,6 +720,10 @@
 	<created xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-13T09:14:34.000Z</created>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/77">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/38">
 	<narrower xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/44"/>
 </rdf:Description>
@@ -660,8 +732,16 @@
 	<narrower xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/14"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/156">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/33">
 	<hasVersion xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasVersion>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/41">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/77">
@@ -809,6 +889,10 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/15">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/39">
 	<narrower xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/49"/>
 </rdf:Description>
@@ -829,8 +913,16 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/166">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/11">
 	<broader xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/154">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/76">
@@ -864,6 +956,10 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/32">
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Triassic rock units on Wikipedia including descriptions in German</prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/8">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/0">
@@ -958,6 +1054,10 @@
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">All top concepts and concept schemes for geologic units</prefLabel>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/18">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/43">
 	<broader xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/40"/>
 </rdf:Description>
@@ -1034,6 +1134,10 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-09T06:47:43.611Z</modified>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/158">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/4">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 </rdf:Description>
@@ -1054,6 +1158,10 @@
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">technical issues</prefLabel>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/4">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/87">
 	<deprecated xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
 </rdf:Description>
@@ -1068,6 +1176,10 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/163">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/75">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/62">
@@ -1098,6 +1210,10 @@
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="de">GBA_GEO</label>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/43">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/23">
 	<hasVersion xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasVersion>
 </rdf:Description>
@@ -1122,6 +1238,14 @@
 	<broader xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/38"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/86">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/horchr"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/31">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/3">
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">GBA_TectonicUnits</prefLabel>
 </rdf:Description>
@@ -1142,6 +1266,10 @@
 	<hasVersion xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</hasVersion>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/71">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/1">
 	<narrower xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/8"/>
 </rdf:Description>
@@ -1160,6 +1288,10 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/5">
 	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">http://resource.geolba.ac.at/PoolParty/sparql/structure</definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/2">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/83">
@@ -1211,6 +1343,10 @@
 	<created xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-18T08:23:18.000Z</created>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/83">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/44">
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Wie finde ich Begriffe (=Konzepte), die auf INSPIRE-Codes verlinkt sind?</prefLabel>
 </rdf:Description>
@@ -1225,6 +1361,10 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/25">
 	<hasVersion xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasVersion>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/46">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/29">
@@ -1321,6 +1461,18 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/40">
 	<created xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-09-25T08:47:23.000Z</created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/165">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/9">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/38">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/17">
@@ -1420,6 +1572,10 @@
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Geothermal-Projekte auf reegle-data</prefLabel>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/26">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/37">
 	<subject xmlns="http://purl.org/dc/terms/" xml:lang="de">frequently asked questions</subject>
 </rdf:Description>
@@ -1438,6 +1594,10 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/61">
 	<subject xmlns="http://purl.org/dc/terms/" xml:lang="de">Organisation</subject>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/14">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/1">
@@ -1460,6 +1620,10 @@
 	<broader xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/17"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/42">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/44">
 	<created xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-09-25T08:50:23.000Z</created>
 </rdf:Description>
@@ -1480,6 +1644,10 @@
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Moore in Österreich (aus Geonames.org)</prefLabel>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/30">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/10">
 	<hasVersion xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</hasVersion>
 </rdf:Description>
@@ -1494,6 +1662,10 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/154">
 	<created xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-28T07:45:12.000Z</created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/29">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/30">
@@ -1514,6 +1686,14 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/62">
 	<topConceptOf xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/61"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/66">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/36">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/3">
@@ -1576,6 +1756,14 @@
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">10 Begriffe, die zuletzt bearbeitet wurden</prefLabel>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/0">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/24">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/159">
 	<narrower xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/165"/>
 </rdf:Description>
@@ -1586,6 +1774,10 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/9">
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Rock names neither linked to INSPIRE nor to GeoSciML</prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/61">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/62">
@@ -1620,6 +1812,10 @@
 	<narrower xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/19"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/85">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/9">
 	<broader xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/1"/>
 </rdf:Description>
@@ -1638,6 +1834,10 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/72">
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Bestandteile zur Geothermie-Nutzung in de, en, fr, es</prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/33">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/29">
@@ -1664,6 +1864,10 @@
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Geologische Bundesanstalt</prefLabel>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/21">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/14">
 	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">PREFIX property:&lt;http://enipedia.tudelft.nl/wiki/Property:&gt;&amp;#xa;SELECT DISTINCT ?s ?Country&amp;#xa;WHERE {?s property:Primary_fuel_type  ?o . FILTER (regex(str(?o), 'Geothermal')) .&amp;#xa;?s property:Country ?Country } &amp;#xa;ORDER BY ?Country&amp;#xa;</definition>
 </rdf:Description>
@@ -1684,6 +1888,10 @@
 	<region xmlns="http://www.w3.org/2006/vcard/ns#" xml:lang="en">Vienna</region>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/73">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/0">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
 </rdf:Description>
@@ -1694,6 +1902,11 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/0">
 	<subject xmlns="http://purl.org/dc/terms/" xml:lang="de">Dokumentation</subject>
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/163">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/17">
@@ -1714,6 +1927,10 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/1">
 	<narrower xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/66"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/16">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/26">
@@ -1804,8 +2021,16 @@
 	<narrower xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/45"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/81">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/83">
 	<broader xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/38"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/48">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/6">
@@ -1834,6 +2059,14 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/85">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/7">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/88">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/7">
@@ -1894,6 +2127,10 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/14">
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Geothermal-Kraftwerke weltweit</prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/167">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/19">
@@ -1977,6 +2214,10 @@
 	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">http://sparql.reegle.info</definition>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/40">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/62">
 	<postal-code xmlns="http://www.w3.org/2006/vcard/ns#">1030</postal-code>
 </rdf:Description>
@@ -1995,6 +2236,10 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/165">
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Begriffe mit Links nach INSPIRE oder GeoSciML</prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/39">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/73">
@@ -2042,6 +2287,14 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/159">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/44">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/88">
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Geologische Einheiten, die vom GBA-Redaktionsteam zur offiziellen Verwendung (official use) gekennzeichnet sind.</prefLabel>
 </rdf:Description>
@@ -2070,12 +2323,20 @@
 	<topConceptOf xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/0"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/32">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/159">
 	<narrower xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/164"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/12">
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="de">x</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/3">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/2">
@@ -2102,13 +2363,32 @@
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">10 Begriffe geologischer Einheiten die zuletzt bearbeitet wurden</prefLabel>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/19">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/159">
 	<narrower xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/162"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/160">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/159">
 	<narrower xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/161"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/76">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/80">
 	<broader xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/79"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/20">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/82">
@@ -2123,6 +2403,10 @@
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Begriffe, die vom GBA-Redaktionsteam zur offiziellen Verwendung (official use) gekennzeichnet sind</prefLabel>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/162">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/49">
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Is it legal to use or copy information from the thesaurus?</prefLabel>
 </rdf:Description>
@@ -2131,12 +2415,20 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/47">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/0">
 	<hasTopConcept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/33"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/32">
 	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">PREFIX rdfs:&lt;http://www.w3.org/2000/01/rdf-schema#&gt;&amp;#xa;PREFIX dcterms:&lt;http://purl.org/dc/terms/&gt;&amp;#xa;PREFIX dbpo:&lt;http://dbpedia.org/ontology/&gt;&amp;#xa;SELECT ?Wikipedia ?Name ?Beschreibung&amp;#xa;WHERE {&amp;#xa;?URI dcterms:subject &lt;http://de.dbpedia.org/resource/Kategorie:Gesteinseinheit_der_Trias&gt; . &amp;#xa;?URI rdfs:label ?Name . ?URI dbpo:abstract ?Beschreibung .&amp;#xa;?URI &lt;http://xmlns.com/foaf/0.1/isPrimaryTopicOf&gt; ?Wikipedia&amp;#xa;}</definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/1">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/45">
@@ -2151,6 +2443,10 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/35">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/4">
 	<hasVersion xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</hasVersion>
 </rdf:Description>
@@ -2163,6 +2459,10 @@
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Alle Begriffe mit Beschreibung in Deutsch und Englisch</prefLabel>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/72">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/0">
 	<hasTopConcept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/35"/>
 </rdf:Description>
@@ -2171,8 +2471,16 @@
 	<broader xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/1"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/84">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/63">
 	<deprecated xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/23">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/72">
@@ -2205,6 +2513,10 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/77">
 	<narrower xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/78"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/11">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/71">
@@ -2284,12 +2596,24 @@
 	<narrower xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/47"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/80">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/27">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/5">
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">GBA_Struktur</prefLabel>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/18">
 	<hasVersion xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasVersion>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/79">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/21">
@@ -2305,6 +2629,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/51">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Impressum</prefLabel>
 	<broader xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/39"/>
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2320,11 +2645,13 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/52">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 	<created xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-11T13:49:13.848Z</created>
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/53">
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 	<broader xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/39"/>
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 </rdf:Description>
@@ -2359,6 +2686,7 @@
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/54">
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">FAQ - häufig gestellte Fragen</prefLabel>
 	<created xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-23T07:43:06.005Z</created>
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/37">
@@ -2462,6 +2790,14 @@
 	<title xmlns="http://purl.org/dc/terms/" xml:lang="en">FAQ</title>
 	<description xmlns="http://purl.org/dc/terms/" xml:lang="de">Häufig gestellte Fragen</description>
 	<description xmlns="http://purl.org/dc/terms/" xml:lang="en">Frequently asked questions</description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/33">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/32">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/158">
@@ -2724,6 +3060,226 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-12-09T10:32:18.000Z</modified>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/154">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/157">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/156">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/28">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/27">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/26">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/25">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/159">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/29">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/8">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/20">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/7">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/62">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/5">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/24">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/23">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/9">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/21">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/4">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/161">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/3">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/160">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/2">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/1">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/165">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/164">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/163">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/162">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/167">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/166">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/17">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/16">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/15">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/14">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/19">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/18">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/53">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/52">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/51">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/13">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/11">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/10">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/54">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/42">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/86">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/85">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/40">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/83">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/39">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/38">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/31">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/30">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/73">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/79">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/doc/34">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/0">
 	<title xmlns="http://purl.org/dc/terms/" xml:lang="de">sparqlBookmarks (ALT)</title>
 	<title xmlns="http://purl.org/dc/terms/" xml:lang="en">sparqlBookmarks (OLD)</title>
@@ -2951,6 +3507,7 @@ e.g. try &amp;nbsp;&amp;nbsp;&lt;a href="https://resource.geolba.ac.at/PoolParty
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/44">
 	<narrower xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/165"/>
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/165">
@@ -2982,6 +3539,7 @@ e.g. try &amp;nbsp;&amp;nbsp;&lt;a href="https://resource.geolba.ac.at/PoolParty
 	<created xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-09-30T11:19:10.972Z</created>
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Liste aller Begriffe mit Symbolfarbe</prefLabel>
 	<broader xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/159"/>
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 </rdf:Description>
 
@@ -2990,11 +3548,13 @@ e.g. try &amp;nbsp;&amp;nbsp;&lt;a href="https://resource.geolba.ac.at/PoolParty
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/56">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">All concepts with web color</prefLabel>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/43">
 	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Ja, am besten über die Sparql-Endpoints der Themenbereiche (z.B. auf &lt;a href="https://resource.geolba.ac.at/PoolParty/sparql/lithology"&gt;https://resource.geolba.ac.at/PoolParty/sparql/lithology&lt;/a&gt; für den Themenbereich Lithologie). Es gibt auch eine Sammlung von Abfragebeispielen (Sparql bookmarks, siehe unten). Weiters steht der gesamte Thesaurus auch themenbereichsweise zum Download - im Datenformat RDF/XML auf der Startseite unter "read more".</definition>
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 	<narrower xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://resource.geolba.ac.at/doc/159"/>
 </rdf:Description>
 
@@ -3010,6 +3570,7 @@ e.g. try &amp;nbsp;&amp;nbsp;&lt;a href="https://resource.geolba.ac.at/PoolParty
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/49">
 	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Alle Texte und Bilder aus dem Thesaurus sind unter der Lizenz: Creative Commons BY-SA 3.0 AT (Namensnennung - Weitergabe unter gleichen Bedingungen 3.0 Österreich, siehe &lt;a href="https://creativecommons.org/licenses/by-sa/3.0/"&gt;https://creativecommons.org/licenses/by-sa/3.0/&lt;/a&gt;) frei verwendbar.</definition>
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Each text or image from the thesaurus is free to use under the license: Creative Commons BY-SA 3.0 AT (Attribution, ShareAlike - read more under &lt;a href="https://creativecommons.org/licenses/by-sa/3.0/"&gt;https://creativecommons.org/licenses/by-sa/3.0/&lt;/a&gt;) </definition>
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-09-30T11:36:20.789Z</modified>
 </rdf:Description>
@@ -3048,6 +3609,7 @@ e.g. try &amp;nbsp;&amp;nbsp;&lt;a href="https://resource.geolba.ac.at/PoolParty
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/50">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-01T11:20:34.088Z</modified>
 	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Per Email an das Thesaurus-Redaktionsteam der Geologische Bundesanstalt - &lt;a href="mailto:thesaurus@geologie.ac.at"&gt;thesaurus@geologie.ac.at&lt;/a&gt;. &lt;br&gt;Zusätzlich kann über den Tab "Feedback" im Navigationsbereich rechts oben ein Thesauruskonzept direkt per Email an das Thesaurus-Redaktionsteam kommentiert werden.</definition>
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">By email to the Thesaurus editorial team of Geologic Survey of Austria - &lt;a href="mailto:thesaurus@geologie.ac.at"&gt;thesaurus@geologie.ac.at&lt;/a&gt;.
 In addition, a thesaurus concept can be commented directly to the Thesaurus Editorial Team via the "Feedback" tab in the navigation area on the top right.</definition>
 </rdf:Description>
@@ -3070,6 +3632,7 @@ In addition, a thesaurus concept can be commented directly to the Thesaurus Edit
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/doc/65">
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://resource.geolba.ac.at/user/schmar"/>
 	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">a) Suchbegriff (oder Wortteil) in das Suchfeld oben eingeben. Wird der gewünschte Begriff aus der Dropdown Liste angeklickt, so navigiert man direkt zum ausgewählten Konzept.&lt;br&gt;
 b) Wird hingegen der Suchbegriff jedoch mit Enter oder dem "Go!" Button bestätigt, so werden alle Begriffe sowie Beschreibungstexte durchsucht und in einer Liste präsentiert.&lt;br&gt;
 c) Alternativ kann natürlich auch auf der Startseite &lt;a href="http://resource.geolba.ac.at/GeologicUnit/198"&gt;Lithostratigraphische Einheiten in Österreich&lt;/a&gt; ausgewählt werden und über die hierarchisch untergeordneten Begriffe das gewünschte Konzept gefunden werden.

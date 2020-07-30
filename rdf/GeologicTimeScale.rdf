@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#">
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/217">
 	<isOlderThan xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:resource="http://resource.geolba.ac.at/GeologicTimeScale/216"/>
@@ -569,7 +574,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/38">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/05d3c"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/05d3c"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/142">
@@ -789,7 +794,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/32">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/01n5c"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/01n5c"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/129">
@@ -1644,7 +1649,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/27">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/01rk5"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/01rk5"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/46">
@@ -1701,7 +1706,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/26">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/04wsg"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/04wsg"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/51">
@@ -2651,7 +2656,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/11">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/016s9p"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/016s9p"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/189">
@@ -3704,7 +3709,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/76">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/05k_2"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/05k_2"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/105">
@@ -3940,7 +3945,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/3">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/05w_0"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/05w_0"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/53">
@@ -4172,7 +4177,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/9">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/0513nt"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/0513nt"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/139">
@@ -4441,7 +4446,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/35">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/03_p6"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/03_p6"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/23">
@@ -4661,7 +4666,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/8">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/0542jn"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/0542jn"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/1">
@@ -4930,7 +4935,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/192">
-	<deprecated xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/50">
@@ -5163,7 +5168,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/10">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/0542jn"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/0542jn"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/93">
@@ -5407,7 +5412,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/214">
-	<seeAlso xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://id.loc.gov/authorities/subjects/sh92004574"/>
+	<rdfs:seeAlso rdf:resource="http://id.loc.gov/authorities/subjects/sh92004574"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/185">
@@ -5782,7 +5787,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/39">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://sw.opencyc.org/concept/Mx4rwPyZ6JwpEbGdrcN5Y29ycA"/>
+	<owl:sameAs rdf:resource="http://sw.opencyc.org/concept/Mx4rwPyZ6JwpEbGdrcN5Y29ycA"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/143">
@@ -5790,7 +5795,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/13">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/05htb"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/05htb"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/25">
@@ -5826,7 +5831,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/29">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/05kwh"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/05kwh"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/137">
@@ -6820,10 +6825,6 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/100">
 	<isYoungerThan xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:resource="http://resource.geolba.ac.at/GeologicTimeScale/99"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/175">
-	<colourHexCode xmlns="http://dbpedia.org/ontology/">#FFEDB3</colourHexCode>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/173">
@@ -7938,7 +7939,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/12">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/01p6dg"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/01p6dg"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/180">
@@ -8118,7 +8119,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/31">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/02753"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/02753"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/177">
@@ -8430,7 +8431,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/33">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/05s74"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/05s74"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/131">
@@ -9092,7 +9093,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/74">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/05sh8"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/05sh8"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/126">
@@ -9172,7 +9173,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/36">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/01pt4"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/01pt4"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/144">
@@ -9485,7 +9486,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/47">
-	<deprecated xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/104">
@@ -10115,7 +10116,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/34">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/07csq"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/07csq"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/65">
@@ -11045,7 +11046,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/37">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/05wc9"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/05wc9"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/92">
@@ -11317,7 +11318,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/24">
-	<deprecated xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/1">
@@ -11809,7 +11810,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/2">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/05xv_"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/05xv_"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/165">
@@ -12169,7 +12170,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/75">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/02kwm"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/02kwm"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/160">
@@ -12253,7 +12254,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/28">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/01mwk"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/01mwk"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/220">
@@ -12357,7 +12358,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/6">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/0fy1l"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/0fy1l"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/152">
@@ -12558,7 +12559,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/7">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/03cjxd"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/03cjxd"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/220">
@@ -14558,7 +14559,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/78">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/05swt"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/05swt"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/9">
@@ -14946,11 +14947,11 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/77">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/04syc"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/04syc"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/212">
-	<deprecated xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/70">
@@ -16158,7 +16159,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/39">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/069cx"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/069cx"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/105">
@@ -16516,7 +16517,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/4">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/0fdlx"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/0fdlx"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/118">
@@ -17457,7 +17458,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/30">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/06p5z"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/06p5z"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/86">
@@ -17505,7 +17506,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/5">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/0gy64"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/0gy64"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/111">
@@ -17813,7 +17814,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/25">
-	<sameAs xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://rdf.freebase.com/ns/m/05s9k"/>
+	<owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/05s9k"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/46">
@@ -19710,10 +19711,6 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-26T12:47:28.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/175">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-02-20T14:10:53.000Z</modified>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/176">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-02-20T13:46:28.000Z</modified>
 </rdf:Description>
@@ -20114,10 +20111,6 @@
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-29T13:32:26.000Z</modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/217">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-29T13:42:13.000Z</modified>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/214">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-29T13:31:01.000Z</modified>
 </rdf:Description>
@@ -20128,10 +20121,6 @@
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/218">
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-29T13:42:19.000Z</modified>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/219">
-	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-29T13:42:22.000Z</modified>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/86">
@@ -21394,20 +21383,579 @@
 	<colourHexCode xmlns="http://dbpedia.org/ontology/">#FFFFE5</colourHexCode>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/217">
-	<colourHexCode xmlns="http://dbpedia.org/ontology/">#EFEFD7</colourHexCode>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/218">
 	<colourHexCode xmlns="http://dbpedia.org/ontology/">#FFFFCC</colourHexCode>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/220">
+	<colourHexCode xmlns="http://dbpedia.org/ontology/">#FFFF7F</colourHexCode>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/219">
-	<colourHexCode xmlns="http://dbpedia.org/ontology/">#EFEFBF</colourHexCode>
+	<colourHexCode xmlns="http://dbpedia.org/ontology/">#FFFF7F</colourHexCode>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-02-06T14:32:33.783Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/217">
+	<colourHexCode xmlns="http://dbpedia.org/ontology/">#FFFFCC</colourHexCode>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-02-06T14:32:55.411Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/175">
+	<colourHexCode xmlns="http://dbpedia.org/ontology/">#FFFFCC</colourHexCode>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-02-06T14:33:12.041Z</modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/10">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/105">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/106">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/107">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/108">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/109">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/11">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/110">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/111">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/112">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/113">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/114">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/115">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/116">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/117">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/118">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/119">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/12">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/122">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/128">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/13">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/130">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/131">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/132">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/133">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/134">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/135">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/136">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/137">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/138">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/140">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/141">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/142">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/143">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/144">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/145">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/146">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/147">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/148">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/149">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/150">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/151">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/152">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/153">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/154">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/155">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/156">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/157">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/158">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/159">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/160">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/161">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/162">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/163">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/164">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/165">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/166">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/167">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/168">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/169">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/170">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/171">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/172">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/173">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/174">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/175">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/176">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/177">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/178">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/182">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/183">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/184">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/185">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/186">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/187">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/188">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/189">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/190">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/191">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/200">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/201">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/206">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/207">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/208">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/214">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/215">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/216">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/217">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/218">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/220">
-	<colourHexCode xmlns="http://dbpedia.org/ontology/">#FFFF7F</colourHexCode>
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/28">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/29">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/30">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/31">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/32">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/33">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/34">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/35">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/36">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/37">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/38">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/45">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/46">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/48">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/49">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/50">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/51">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/52">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/53">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/54">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/55">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/56">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/57">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/6">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/60">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/62">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/63">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/64">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/65">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/66">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/67">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/68">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/69">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/70">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/71">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/72">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/73">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/74">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/75">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/76">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/77">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/78">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/79">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/8">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/80">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/95">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/96">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geolba.ac.at/GeologicTimeScale/97">
+	<mapViewer xmlns="http://resource.geolba.ac.at/schema/thes#" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mapViewer>
 </rdf:Description>
 
 </rdf:RDF>
