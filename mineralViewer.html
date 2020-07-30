@@ -160,7 +160,7 @@
                         References: c.References.value,
                         Mapping: c.Mapping.value,
                         Picture: c.Picture.value
-                    }));
+                    })).filter(d => d.searchTerm.indexOf(' ') == -1); //filter combined searchterms
                     //console.log(vocData);
 
                     let searchTerms = vocData.map(a => a.searchTerm);

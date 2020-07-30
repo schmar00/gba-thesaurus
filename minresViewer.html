@@ -79,9 +79,11 @@
             width: 3rem;
             height: 3rem;
         }
+
         .irisIcon {
             width: 14px;
         }
+
     </style>
 </head>
 
@@ -163,7 +165,8 @@
                         References: c.References.value,
                         Mapping: c.Mapping.value,
                         Picture: c.Picture.value
-                    }));
+                    })).filter(d => d.searchTerm.indexOf(' ') == -1); //filter combined searchterms
+
                     //console.log(vocData);
 
                     let searchTerms = vocData.map(a => a.searchTerm); //console.log(searchTerms);
