@@ -2,7 +2,7 @@
 
 <head>
     <meta charset=utf-8 />
-    <title>Faults and thrusts</title>
+    <title>Thesaurus | Mineral resources DB</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -167,7 +167,7 @@
                     //console.log(searchTerms);
                     let queryMap = `(Mineralien like '%${searchTerms.join("%')or(Mineralien like '%")}%')`;
                     //console.log(queryMap);
-                    fetch(`https://gisgba.geologie.ac.at/arcgis/rest/services/test/TEST_WFS_IRIS_Lagerstaetten_Reviere/MapServer/0/query?where=${queryMap}&outFields=G01.rst.IRIS_v.HAUPTROHSTOFF,G01.RST.IRIS_P.ID,G01.rst.IRIS_v.VORK_NAME,G01.rst.IRIS_v.BEZIRKNAME,G01.rst.IRIS_v.BEZIRK_URL,G01.rst.IRIS_v.ART_TXT,G01.rst.IRIS_v.FORM_TXT,G01.rst.IRIS_v.TEKT_EINH,G01.rst.IRIS_v.WERTSTOFFE,G01.rst.IRIS_v.MINERALIEN,G01.rst.IRIS_v.STATUS_TXT&f=geojson`)
+                    fetch(`https://gisgba.geologie.ac.at/arcgis/rest/services/test/TEST_WFS_IRIS_Lagerstaetten_Reviere/MapServer/0/query?where=${encodeURI(queryMap)}&outFields=*&f=geojson`)
                         .then(res => res.json())
                         .then(data => {
                             wfsData = data;

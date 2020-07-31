@@ -2,7 +2,7 @@
 
 <head>
     <meta charset=utf-8 />
-    <title>Faults and thrusts</title>
+    <title>Thesaurus | Fault DB</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -197,7 +197,8 @@
                             Mapping: c.Mapping.value,
                             Picture: c.Picture.value
                         }));
-                        fetch(`https://gisgba.geologie.ac.at/arcgis/rest/services/G1000/AT_GBA_GEOERA_TEKT_TEST/FeatureServer/0/query?where=(THESURL='${concepts.map(a => a.uri).join("'+or+THESURL='")}')&outFields=*&returnGeometry=true&f=geojson`)
+                       let mapQuery = `(THESURL='${concepts.map(a => a.uri).join("'+or+THESURL='")}')`;
+                           fetch(`https://gisgba.geologie.ac.at/arcgis/rest/services/G1000/AT_GBA_GEOERA_TEKT_TEST/FeatureServer/0/query?where=${encodeURI(mapQuery)}&outFields=*&returnGeometry=true&f=geojson`)
                             .then(res => res.text())
                             .then(data => {
                                 data = JSON.parse(data.replace('EPSG:4326', 'GEOGCS[WGS 84,DATUM[WGS_1984,SPHEROID[WGS 84,6378137,298.257223563,AUTHORITY[EPSG,7030]],AUTHORITY[EPSG,6326]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.017453292519943295,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4326]]'));
