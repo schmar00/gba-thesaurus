@@ -99,7 +99,7 @@ var detail = {
                         let projDV_Arno = ['GeologicUnit', 'lithology', 'GeologicTimeScale'];
 
                         if (projDV_Arno.includes(uri.split('\/')[3])) {
-                            this.insertApp('Data', 'Viewer', 'http://gisgba.geologie.ac.at/DataViewer/tdv/Index.aspx?url=' + uri + '&lang=' + lang.ID, 'map');
+                            this.insertApp('Data', 'Viewer', 'https://gisgba.geologie.ac.at/DataViewer/tdv/Index.aspx?url=' + uri + '&lang=' + lang.ID, 'map');
                         } else if (uri.split('\/')[3] == 'structure') {
                             this.insertApp('Map', 'download', 'structureViewer.html?uri=' + uri + '&lang=' + lang.ID, 'map');
                         } else if (uri.split('\/')[3] == 'minres') {
