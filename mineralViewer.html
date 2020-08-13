@@ -149,7 +149,7 @@
             fetch(`${ws.endpoint}mineral?query=${query}&format=application/json`)
                 .then(res => res.json())
                 .then(jsonData => {
-                    //console.log(jsonData);
+                    //console.log('jsonData: ',jsonData);
 
                     vocData = jsonData.results.bindings.map(c => ({
                         uri: c.s.value,
@@ -160,13 +160,13 @@
                         References: c.References.value,
                         Mapping: c.Mapping.value,
                         Picture: c.Picture.value
-                    })).filter(d => d.searchTerm.indexOf(' ') == -1); //filter combined searchterms
-                    //console.log(vocData);
+                    }));
+                    //console.log('vocData: ',vocData);
 
                     let searchTerms = vocData.map(a => a.searchTerm);
-                    //console.log(searchTerms);
+                    //console.log('searchTerms: ',searchTerms);
                     let queryMap = `(Mineralien like '%${searchTerms.join("%')or(Mineralien like '%")}%')`;
-                    //console.log(queryMap);
+                    //console.log('queryMap: ',queryMap);
                     fetch(`https://gisgba.geologie.ac.at/arcgis/rest/services/test/TEST_WFS_IRIS_Lagerstaetten_Reviere/MapServer/0/query?where=${encodeURI(queryMap)}&outFields=*&f=geojson`)
                         .then(res => res.json())
                         .then(data => {
