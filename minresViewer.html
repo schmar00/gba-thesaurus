@@ -83,12 +83,13 @@
         .irisIcon {
             width: 14px;
         }
-
     </style>
 </head>
 
 <body>
-    <button id="getFile" onclick="downloadShape();" data-toggle="tooltip" data-placement="left" title="download shapefile" data-original-title="Tooltip on left"><i style="color: Dodgerblue;" class="fas fa-4x fa-file-download"></i></button>
+    <button id="getFile" onclick="downloadShape();" data-toggle="tooltip" data-placement="left"
+        title="download shapefile" data-original-title="Tooltip on left"><i style="color: Dodgerblue;"
+            class="fas fa-4x fa-file-download"></i></button>
     <div id="map"></div>
     <div id="loading" class="spinner-border text-primary" role="status">
         <span class="sr-only">Loading...</span>
@@ -104,7 +105,7 @@
         }
         let uri = '';
         let vocData = [];
-        let wfsData = {};
+        let wfsFeatures = [];
 
         let map = L.map('map').setView([47.7, 13.5], 8);
         const mainIcon = L.divIcon({
@@ -168,29 +169,49 @@
                     })).filter(d => d.searchTerm.indexOf(' ') == -1); //filter combined searchterms
 
                     //console.log(vocData);
+                    const nql = 40; //network query limit defined by SQL DB proxy => max length "where in"
+                    let st = vocData.map(a => a.searchTerm);
+                    let searchTerms = new Array(Math.ceil(st.length / nql))
+                        .fill()
+                        .map(_ => st.splice(0, nql));
+                    let promises = [];
+                    searchTerms.forEach(sT_part => {
+                        let queryMap = `(Wertstoffe like '%${sT_part.join("%')or(Wertstoffe like '%")}%')`;
+                        promises.push(
+                            fetch(
+                                `https://gisgba.geologie.ac.at/arcgis/rest/services/test/TEST_WFS_IRIS_Lagerstaetten_Reviere/MapServer/0/query?where=${encodeURI(queryMap)}&outFields=*&f=geojson`
+                            )
+                            .then(res => res.json())
+                            .then(data => {
+                                let wf = wfsFeatures.map(x => x.properties['G01.RST.IRIS_P.ID']);
+                                data.features.forEach(f => {
+                                    if (!wf.includes(f.properties['G01.RST.IRIS_P.ID'])) {
+                                        wfsFeatures.push(f);
+                                        //console.log('add: '+f.properties['G01.RST.IRIS_P.ID']); OK
+                                    }
+                                });
+                            })
+                        );
+                    });
 
-                    let searchTerms = vocData.map(a => a.searchTerm); //console.log(searchTerms);
-                    let queryMap = `(Wertstoffe like '%${searchTerms.join("%')or(Wertstoffe like '%")}%')`;
-                    //console.log(queryMap);
-                    fetch(`https://gisgba.geologie.ac.at/arcgis/rest/services/test/TEST_WFS_IRIS_Lagerstaetten_Reviere/MapServer/0/query?where=${encodeURI(queryMap)}&outFields=G01.rst.IRIS_v.HAUPTROHSTOFF,G01.RST.IRIS_P.ID,G01.rst.IRIS_v.VORK_NAME,G01.rst.IRIS_v.BEZIRKNAME,G01.rst.IRIS_v.BEZIRK_URL,G01.rst.IRIS_v.ART_TXT,G01.rst.IRIS_v.FORM_TXT,G01.rst.IRIS_v.TEKT_EINH,G01.rst.IRIS_v.WERTSTOFFE,G01.rst.IRIS_v.MINERALIEN,G01.rst.IRIS_v.STATUS_TXT&f=geojson`)
-                        .then(res => res.json())
-                        .then(data => {
-                            wfsData = data;
-                            //console.log(wfsData);
-                            for (let a of data.features) {
-                                let bn = '';
-                                if (a.properties['G01.rst.IRIS_v.BEZIRK_URL'] !== null) {
-                                    bn = `<a href="${a.properties['G01.rst.IRIS_v.BEZIRK_URL']}">${a.properties['G01.rst.IRIS_v.BEZIRKNAME']}</a><br>`;
-                                }
-                                let icon = sideIcon;
-                                if (searchTerms.indexOf(a.properties['G01.rst.IRIS_v.HAUPTROHSTOFF']) > -1) {
-                                    icon = mainIcon;
-                                }
+                    Promise.all(promises).then(() => {
+                        //console.log(wfsFeatures);
+                        for (let a of wfsFeatures) {
+                            let bn = '';
+                            if (a.properties['G01.rst.IRIS_v.BEZIRK_URL'] !== null) {
+                                bn =
+                                    `<a href="${a.properties['G01.rst.IRIS_v.BEZIRK_URL']}">${a.properties['G01.rst.IRIS_v.BEZIRKNAME']}</a><br>`;
+                            }
+                            let icon = sideIcon;
+                            if (searchTerms.indexOf(a.properties[
+                                    'G01.rst.IRIS_v.HAUPTROHSTOFF']) > -1) {
+                                icon = mainIcon;
+                            }
 
-                                L.marker([a.geometry.coordinates[1], a.geometry.coordinates[0]], {
-                                        icon: icon
-                                    }).addTo(map)
-                                    .bindPopup(`<div class="pop">
+                            L.marker([a.geometry.coordinates[1], a.geometry.coordinates[0]], {
+                                    icon: icon
+                                }).addTo(map)
+                                .bindPopup(`<div class="pop">
                                             <h5><img class="irisIcon" src="https://geolba.maps.arcgis.com/apps/webappviewer/images/shortcut.ico" >
                                             <a href="https://geolba.maps.arcgis.com/apps/webappviewer/index.html?id=ef8095943a714d7893d41f02ec9c156d&marker=${a.geometry.coordinates[0]};${a.geometry.coordinates[1]};;;;${a.properties['G01.rst.IRIS_v.VORK_NAME']}&level=11">
                                                 ${a.properties['G01.rst.IRIS_v.VORK_NAME']}</a>
@@ -200,17 +221,23 @@
                                             <strong>${a.properties['G01.rst.IRIS_v.HAUPTROHSTOFF']}</strong> / ${a.properties['G01.rst.IRIS_v.WERTSTOFFE']}<br><strong>Mineralien</strong>: ${a.properties['G01.rst.IRIS_v.MINERALIEN']}<br>
                                             <strong>Status</strong>: ${a.properties['G01.rst.IRIS_v.STATUS_TXT']}
                                             </div>`);
-                            }
-                            $('#loading').hide();
-                        });
+                        }
+                        $('#loading').hide();
+                    });
                 });
         } else {
             alert('URI parameter not defined');
         }
 
         function downloadShape() {
-
-            wfsData = JSON.parse(JSON.stringify(wfsData).replace(/G01.rst.IRIS_v./g, '').replace(/G01.RST.IRIS_P./g, '').replace('EPSG:4326', 'GEOGCS[WGS 84,DATUM[WGS_1984,SPHEROID[WGS 84,6378137,298.257223563,AUTHORITY[EPSG,7030]],AUTHORITY[EPSG,6326]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.017453292519943295,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4326]]').replace(/SCHAUBERGWERK/g, 'Museum').replace(/\_TXT/g, '').replace(/HAUPTROHSTOFF/g, 'Label'));
+            let wfsData = {
+                type: "FeatureCollection",
+                features: wfsFeatures
+            };
+            wfsData = JSON.parse(JSON.stringify(wfsData).replace(/G01.rst.IRIS_v./g, '').replace(/G01.RST.IRIS_P./g, '')
+                .replace('EPSG:4326',
+                    'GEOGCS[WGS 84,DATUM[WGS_1984,SPHEROID[WGS 84,6378137,298.257223563,AUTHORITY[EPSG,7030]],AUTHORITY[EPSG,6326]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.017453292519943295,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4326]]'
+                ).replace(/SCHAUBERGWERK/g, 'Museum').replace(/\_TXT/g, '').replace(/HAUPTROHSTOFF/g, 'Label'));
             //console.log(wfsData);
             let mainConcept = vocData.find(a => a.uri == uri).Label;
             let langPrefix = ['Hauptrohstoff', 'u.a.'];
@@ -222,7 +249,7 @@
 
                 for (var prop in i.properties) {
                     if (Object.prototype.hasOwnProperty.call(i.properties, prop)) {
-                        if (typeof(i.properties[prop]) === 'object') {
+                        if (typeof (i.properties[prop]) === 'object') {
                             i.properties[prop] = '';
                         }
                     }
@@ -253,7 +280,6 @@
                 alert("Error: " + e);
             }
         }
-
     </script>
 
 </body>
