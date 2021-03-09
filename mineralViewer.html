@@ -150,7 +150,7 @@
             fetch(`${ws.endpoint}mineral?query=${query}&format=application/json`)
                 .then(res => res.json())
                 .then(jsonData => {
-                    //console.log('jsonData: ',jsonData);  OK
+                    //console.log('jsonData: ', jsonData); //OK
                     vocData = jsonData.results.bindings.map(c => ({
                         uri: c.s.value,
                         searchTerm: c.p.value,
@@ -161,27 +161,30 @@
                         Mapping: c.Mapping.value,
                         Picture: c.Picture.value
                     }));
-                    //console.log('vocData: ',vocData); OK
+                    //console.log('vocData: ', vocData); //OK
                     const nql = 40; //network query limit defined by SQL DB proxy => max length "where in"
                     let st = vocData.map(a => a.searchTerm);
                     let searchTerms = new Array(Math.ceil(st.length / nql))
                         .fill()
                         .map(_ => st.splice(0, nql));
+                    //console.log(searchTerms);
 
                     let promises = [];
                     searchTerms.forEach(sT_part => {
                         let queryMap = `(Mineralien like '%${sT_part.join("%')or(Mineralien like '%")}%')`;
+                        //console.log(queryMap);
                         promises.push(
                             fetch(
                                 `https://gisgba.geologie.ac.at/arcgis/rest/services/test/TEST_WFS_IRIS_Lagerstaetten_Reviere/MapServer/0/query?where=${encodeURI(queryMap)}&outFields=*&f=geojson`
                             )
                             .then(res => res.json())
                             .then(data => {
+                                //console.log('data: ', data);
                                 let wf = wfsFeatures.map(x => x.properties['G01.RST.IRIS_P.ID']);
                                 data.features.forEach(f => {
                                     if (!wf.includes(f.properties['G01.RST.IRIS_P.ID'])) {
                                         wfsFeatures.push(f);
-                                        //console.log('add: '+f.properties['G01.RST.IRIS_P.ID']); OK
+                                        //console.log('add: '+f.properties['G01.RST.IRIS_P.ID']); //OK
                                     }
                                 });
                             })
@@ -189,19 +192,26 @@
                     });
 
                     Promise.all(promises).then(() => {
-                        //console.log(wfsFeatures);
+                        //console.log('WFS: ', wfsFeatures);
                         for (let a of wfsFeatures) {
                             let bn = '';
                             if (a.properties['G01.rst.IRIS_v.BEZIRK_URL'] !== null) {
                                 bn =
-                                    `<a href="${a.properties['G01.rst.IRIS_v.BEZIRK_URL']}">${a.properties['G01.rst.IRIS_v.BEZIRKNAME']}</a><br>`;
+                                    `<a href="${a.properties['G01.rst.IRIS_v.BEZIRK_URL']}">
+                                        ${a.properties['G01.rst.IRIS_v.BEZIRKNAME']}
+                                    </a><br>`;
                             }
                             let icon = sideIcon;
-                            for (let i of searchTerms) {
-                                if (a.properties['G01.rst.IRIS_v.MINERALIEN'].indexOf(i +
-                                        ' (H)') > -1) {
+
+                            for (let i of searchTerms[0]) {
+                                if (a.properties['G01.rst.IRIS_v.MINERALIEN'].indexOf(i + ' (H)') > -1) {
                                     icon = mainIcon;
                                 }
+                            }
+
+                            let min = 'G01.rst.IRIS_v.MINERALIEN';
+                            if (USER_LANG == 'en') {
+                                min = 'G01.rst.IRIS_v.MINERALS'
                             }
 
                             L.marker([a.geometry.coordinates[1], a.geometry.coordinates[0]], {
@@ -212,8 +222,11 @@
                                 .bindPopup(`<div class="pop">
                                             <h5><img class="irisIcon" src="https://geolba.maps.arcgis.com/apps/webappviewer/images/shortcut.ico" >
                                             <a href="https://geolba.maps.arcgis.com/apps/webappviewer/index.html?id=ef8095943a714d7893d41f02ec9c156d&marker=${a.geometry.coordinates[0]};${a.geometry.coordinates[1]};;;;${a.properties['G01.rst.IRIS_v.VORK_NAME']}&level=11">
-                                                ${a.properties['G01.rst.IRIS_v.VORK_NAME']}</a></h5>
-                                            ${a.properties['G01.rst.IRIS_v.MINERALIEN']}<hr>
+                                                ${a.properties['G01.rst.IRIS_v.VORK_NAME']}
+                                            </a>
+                                            </h5>
+                                            ${(a.properties[min] == undefined)?a.properties['G01.rst.IRIS_v.MINERALIEN']:a.properties[min].split(',').join(', ')}
+                                            <hr>
                                             ${bn}
                                             ${a.properties['G01.rst.IRIS_v.ART_TXT']} / ${a.properties['G01.rst.IRIS_v.FORM_TXT']}<br>
                                             ${a.properties['G01.rst.IRIS_v.HAUPTROHSTOFF']} / ${a.properties['G01.rst.IRIS_v.WERTSTOFFE']}<br>
@@ -227,56 +240,98 @@
         }
 
         function downloadShape() {
+            if (wfsFeatures.length > 0) {
+                let removeProp = ["INSP_FORM",
+                    "INSP_FORMURI", "SYMBOL1", "STREICHEN", "GROESSE_TXT", "GBANR", "HAUPTROHSTOFF", "STATUS_TXT",
+                    "SCHAUBERGWERK", "ISOTOP", "GBA_BETR_DAUER", "PRAEHIST_A", "ROEMERZEITLICH_A",
+                    "FRUEHMITTELALTER_A", "MITTELALTER_A", "JH15_A", "JH16_A", "JH17_A", "JH18_A", "JH19_A",
+                    "JH20_A", "JH21_A", "VITRINIT_U", "VITRINIT_O", "TYP", "GEW_ART", "BERGBAU_FLAECHE_m2",
+                    "BERGBAU_LAENGE_M", "BERGBAU_BREITE_M", "gba_DOK_TEXT_ID", "DocumentationURL"
+                ];
+                /* let removeProp = ["BEZIRKNAME", "BEZIRK_URL", "ART_TXT", "INSP_FORM",
+                    "INSP_FORMURI", "SYMBOL1", "FORM_TXT", "STREICHEN", "GROESSE_TXT", "TEKT_EINH", "GBANR",
+                    "HAUPTROHSTOFF", "WERTSTOFFE", "commodities", "MINERALIEN", "MINERALS", "STATUS_TXT",
+                    "SCHAUBERGWERK", "ISOTOP", "GBA_BETR_DAUER", "PRAEHIST_A", "ROEMERZEITLICH_A",
+                    "FRUEHMITTELALTER_A", "MITTELALTER_A", "JH15_A", "JH16_A", "JH17_A", "JH18_A", "JH19_A",
+                    "JH20_A", "JH21_A", "VITRINIT_U", "VITRINIT_O", "TYP", "GEW_ART", "BERGBAU_FLAECHE_m2",
+                    "BERGBAU_LAENGE_M", "BERGBAU_BREITE_M", "gba_DOK_TEXT_ID", "DocumentationURL"
+                ]; */
 
-            let wfsData = {
-                type: "FeatureCollection",
-                features: wfsFeatures
-            };
+                /* let exportFields = Object.getOwnPropertyNames(wfsFeatures[0].properties)
+                    .map(a => a.replace('G01.rst.IRIS_v.', '').replace('G01.RST.IRIS_P.', ''))
+                    .filter(e => e !== 'OBJECTID');
+                console.log(exportFields);
 
-            wfsData = JSON.parse(JSON.stringify(wfsData).replace(/G01.rst.IRIS_v./g, '').replace(/G01.RST.IRIS_P./g, '')
-                .replace('EPSG:4326',
-                    'GEOGCS[WGS 84,DATUM[WGS_1984,SPHEROID[WGS 84,6378137,298.257223563,AUTHORITY[EPSG,7030]],AUTHORITY[EPSG,6326]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.017453292519943295,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4326]]'
-                ).replace(/\_TXT/g, '').replace(/HAUPTROHSTOFF/g, 'Label'));
-            //console.log(wfsData);
-            let mainConcept = vocData.find(a => a.uri == uri).Label;
-            let langPrefix = ['Hauptrohstoff', 'u.a.'];
-            if (USER_LANG == 'en') {
-                langPrefix = ['Main resource', 'i.a.'];
-            }
+                let exportArr = []; */
+                let mainConcept = vocData.find(a => a.uri == uri).Label;
+                let langPrefix = ['Hauptrohstoff', 'u.a.'];
+                if (USER_LANG == 'en') {
+                    langPrefix = ['Main resource', 'i.a.'];
+                }
 
-            for (i of wfsData.features) {
+                let st = vocData.map(a => a.searchTerm);
+                console.log(st);
 
-                for (var prop in i.properties) {
-                    if (Object.prototype.hasOwnProperty.call(i.properties, prop)) {
-                        if (typeof (i.properties[prop]) === 'object') {
-                            i.properties[prop] = '';
+                for (let i of wfsFeatures) {
+                    for (let j of removeProp) {
+                        delete i.properties['G01.rst.IRIS_v.' + j];
+                        delete i.properties['G01.RST.IRIS_P.OBJECTID'];
+                        //delete i.properties['G01.RST.IRIS_P.ID'];
+                    }
+
+                    i.properties.uri = '';
+                    i.properties.Desc = '';
+                    //i.properties.Label = `${langPrefix[1]} ${mainConcept}`;
+                    i.properties.Synonyms = '';
+                    i.properties.Mapping = '';
+
+                    let l = i.properties['G01.rst.IRIS_v.MINERALIEN']
+                        .replace(/\)\,/g, ' ').split(' ')
+                        .filter(x => st.includes(x));
+                    i.properties.Label = l.join('; ');
+                    //console.log(l);
+                    if (l.length == 1) {
+                        let j = vocData.map(a => a.Label).indexOf(l[0]);
+                        try {
+                            i.properties.uri = vocData[j].uri;
+                            i.properties.Desc = vocData[j].Desc;
+                            i.properties.Synonyms = vocData[j].Synonyms;
+                            i.properties.Mapping = vocData[j].Mapping;
+                        } catch (e) {
+
                         }
                     }
-                }
-                //console.log(vocData);
 
-                let mineral = `${langPrefix[1]} ${mainConcept}`;
-                i.properties.uri = '';
-                i.properties.Desc = `${langPrefix[0]} ${i.properties['Label']}`;
-                i.properties.Label = `${langPrefix[1]} ${mainConcept}`;
-                i.properties.Synonyms = '';
-                i.properties.Mapping = '';
-                for (let o of vocData) {
-                    if (i.properties.MINERALIEN.indexOf(o.searchTerm + ' (H)') > -1) {
-                        i.properties.Label = o.Label;
-                        i.properties.uri = o.uri;
-                        i.properties.Desc = o.Desc;
-                        i.properties.Synonyms = o.Synonyms;
-                        i.properties.Mapping = o.Mapping;
+
+                    for (let o of vocData) {
+                        if (i.properties['G01.rst.IRIS_v.MINERALIEN'].indexOf(o.searchTerm + ' (H)') > -1) {
+                            i.properties.Label = o.Label;
+                            i.properties.uri = o.uri;
+                            i.properties.Desc = o.Desc;
+                            i.properties.Synonyms = o.Synonyms;
+                            i.properties.Mapping = o.Mapping;
+                        }
+
                     }
                 }
-            }
 
-            try {
-                GeoShape.transformAndDownload(wfsData, mainConcept);
-                //alert(mainConcept + ".zip downloaded");
-            } catch (e) {
-                alert("Error: " + e);
+                let wfsData = {
+                    type: "FeatureCollection",
+                    features: wfsFeatures
+                };
+                let w = JSON.parse(JSON.stringify(wfsData)
+                    .replace(/G01.rst.IRIS_v./g, '')
+                    .replace(/G01.RST.IRIS_P./g, ''));
+                //console.log(w);
+
+                try {
+                    GeoShape.transformAndDownload(w, mainConcept);
+                    //alert(mainConcept + ".zip downloaded");
+                } catch (e) {
+                    alert("Error: " + e);
+                }
+            } else {
+                alert('nothing to download');
             }
         }
     </script>
