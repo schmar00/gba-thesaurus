@@ -57,6 +57,7 @@ var page = {
             this.insertComments('proj_desc', lang.LIST_THESAURUS_PROJECTS); //project desc from js ,insert before ProjCards!
             this.insertComments('other_desc', [lang.DESC_INSPIRE, lang.DESC_LINKEDDATA]);
             this.insertProjCards(); //quick access cards, plus extended project comments from sparql
+            this.insertVideo(); //screen cast youtube
         }
         search.initProjects();
         document.documentElement.setAttribute('lang', USER_LANG);
@@ -160,7 +161,20 @@ var page = {
         $('#disclaimer').html(lang.LABEL_DISCLAIMER);
         $('#IMG_GBALOGO').attr('src', 'img/' + lang.IMG_GBALOGO);
     },
-
+    insertVideo: function () {
+        var div = $('#video');
+        div.append(`<div class="card my-4">
+                    <h4 class="card-header">Screen video</h4>
+                        <div id="" class="card-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" 
+                                    src="https://www.youtube.com/embed/QnCx43zNC_Q?rel=0" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>`);
+    },
     insertProjCards: function () {
         var div = $('#proj_links');
         var query = `
