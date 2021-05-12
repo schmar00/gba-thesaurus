@@ -161,17 +161,14 @@ var page = {
         $('#disclaimer').html(lang.LABEL_DISCLAIMER);
         $('#IMG_GBALOGO').attr('src', 'img/' + lang.IMG_GBALOGO);
     },
-    insertVideo: function () {
+    insertVideo: function () { //https://www.youtube.com/playlist?list=PLfshul-4XQW9H-k-_Q98eRI5LHfUPGbtc
         var div = $('#video');
         div.append(`<div class="card my-4">
                     <h4 class="card-header">Screen video</h4>
                         <div id="" class="card-body">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" 
-                                    src="https://www.youtube.com/embed/QnCx43zNC_Q?rel=0" 
-                                    allowfullscreen>
-                                </iframe>
-                            </div>
+                            <a target="_blank" href="https://www.youtube.com/playlist?list=PLfshul-4XQW9H-k-_Q98eRI5LHfUPGbtc">
+                                <img style="width: 100%; object-fit: cover;" src="/img/youTube_img.png" alt="View a screen video at YouTube">
+                            </a>
                         </div>
                     </div>`);
     },
