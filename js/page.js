@@ -161,13 +161,13 @@ var page = {
         $('#disclaimer').html(lang.LABEL_DISCLAIMER);
         $('#IMG_GBALOGO').attr('src', 'img/' + lang.IMG_GBALOGO);
     },
-    insertVideo: function () { //https://www.youtube.com/playlist?list=PLfshul-4XQW9H-k-_Q98eRI5LHfUPGbtc
+    insertVideo: function () { // https://www.youtube.com/playlist?list=PLfshul-4XQW9H-k-_Q98eRI5LHfUPGbtc
         var div = $('#video');
         div.append(`<div class="card my-4">
                     <h4 class="card-header">Screen video</h4>
                         <div id="" class="card-body">
                             <a target="_blank" href="https://www.youtube.com/playlist?list=PLfshul-4XQW9H-k-_Q98eRI5LHfUPGbtc">
-                                <img style="width: 100%; object-fit: cover;" src="/img/youTube_img.png" alt="View a screen video at YouTube">
+                                <img style="width: 100%; object-fit: cover;" src="img/youTube_img.png" alt="View a screen video at YouTube">
                             </a>
                         </div>
                     </div>`);
