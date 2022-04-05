@@ -50,7 +50,7 @@ var detail = {
                 for (var key in F) detail.insertFrontPart(key, uri, data, Array.from(F[key].values()));
                 var div = $('#pageContent');
                 div.append(`<hr>
-                                <div style="cursor: pointer; color: #404040;" id="detailsBtn" 
+                                <div style="cursor: pointer; color: #757575;" id="detailsBtn" 
                                     onclick="javascript: page.toggleRead(\'detailsBtn\', \'detailsToggle\', \'read more\');"> <span class="fa fa-caret-down"></span> <em>read more ..</em>
                                 </div>
                                 <div style="display:none;" id="detailsToggle">
