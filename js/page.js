@@ -57,7 +57,7 @@ var page = {
             this.insertComments('proj_desc', lang.LIST_THESAURUS_PROJECTS); //project desc from js ,insert before ProjCards!
             this.insertComments('other_desc', [lang.DESC_INSPIRE, lang.DESC_LINKEDDATA]);
             this.insertProjCards(); //quick access cards, plus extended project comments from sparql
-            this.insertVideo(); //screen cast youtube
+            //this.insertVideo(); //screen cast youtube
         }
         search.initProjects();
         document.documentElement.setAttribute('lang', USER_LANG);
@@ -161,20 +161,17 @@ var page = {
         $('#disclaimer').html(lang.LABEL_DISCLAIMER);
         $('#IMG_GBALOGO').attr('src', 'img/' + lang.IMG_GBALOGO);
     },
-    insertVideo: function () {
+    /* insertVideo: function () { // https://www.youtube.com/playlist?list=PLfshul-4XQW9H-k-_Q98eRI5LHfUPGbtc
         var div = $('#video');
         div.append(`<div class="card my-4">
-                    <h4 class="card-header">Screen video</h4>
+                    <h4 class="card-header"><i style="color:red;" class="fab fa-youtube"></i> Screen video</h4>
                         <div id="" class="card-body">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" 
-                                    src="https://www.youtube.com/embed/QnCx43zNC_Q?rel=0" 
-                                    allowfullscreen>
-                                </iframe>
-                            </div>
+                            <a target="_blank" href="https://www.youtube.com/playlist?list=PLfshul-4XQW9H-k-_Q98eRI5LHfUPGbtc">
+                                <img style="width: 100%; object-fit: cover;" src="img/youTube_img.png" alt="View a screen video at YouTube">
+                            </a>
                         </div>
                     </div>`);
-    },
+    }, */
     insertProjCards: function () {
         var div = $('#proj_links');
         var query = `

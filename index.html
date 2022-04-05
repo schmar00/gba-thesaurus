@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="img/icon.png" />
     <link rel="apple-touch-icon" sizes="114x114" href="img/icon.png" />
 
-    <link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/FontAwesome/all.min.css" />
     <link rel="stylesheet" href="css/site.css">
 
@@ -77,6 +77,11 @@
                         <a class="nav-link" href="javascript:location.replace(page.BASE + '?lang=' + lang.ID);">
                             Home
                             <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.youtube.com/playlist?list=PLfshul-4XQW9H-k-_Q98eRI5LHfUPGbtc">
+                            <i class="fab fa-youtube" style="color:red"></i> Tutorial
                         </a>
                     </li>
                     <li class="nav-item">
@@ -200,11 +205,12 @@
                 <a id="license" href="https://creativecommons.org/licenses/by-sa/3.0/at/deed">license</a> |
                 <a id="contact" href="mailto:thesaurus@geologie.ac.at">contact</a> |
                 <a id="disclaimer" href="javascript:page.openParaLink('info=disclaimer');">disclaimer</a> |
-                <a href="https://achecker.ca/checker/index.php?uri=referer&gid=WCAG2-AA" title="WCAG 2.0 Compatible">WCAG 2-AA</a> |
+                <a href="javascript: window.open('https://wave.webaim.org/report#/' + window.location.href, '_blank');" title="WCAG 2.0 Compatible">WCAG 2-AA</a> |
                 <a href="index.html?uri=http://resource.geolba.ac.at/doc/54">FAQ</a> |
-                <a href="https://github.com/schmar00/gba-thesaurus" class="flex flex-column items-center justify-center color-inherit w-100 pa2 br2 br--top no-underline hover-bg-blue4 hover-white"><i class="fab fa-github" style="font-size: 14px;"></i></a>
+                <a href="https://github.com/schmar00/gba-thesaurus" aria-label="GitHub"><i class="fab fa-github" style="color:white; font-size: 14px;"></i></a>
 
-                <!--                <a style="float:right;" href="https://achecker.ca/checker/index.php?uri=referer&gid=WCAG2-AA" title="WCAG 2.0 Compatible">
+                <!--                https://wave.webaim.org/report#/
+                    <a style="float:right;" href="https://achecker.ca/checker/index.php?uri=referer&gid=WCAG2-AA" title="WCAG 2.0 Compatible">
                     <img alt="WCAG Checker" src="https://achecker.ca/images/icon_W2_aa.jpg" alt="WCAG 2.0 (Level AA)" height="32" width="102" />
                 </a>-->
             </div>
