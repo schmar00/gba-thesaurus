@@ -199,7 +199,7 @@ var page = {
                             <br>
                             <div style="cursor: pointer;" id="${project.id}rmBtn"
                             onclick="javascript: page.toggleRead(\'${project.id}rmBtn\', \'${project.id}ReadMore\', \'read more\');"
-                            class="text-muted" style="color: #757575;">
+                            class="text-muted">
                                 <span class="fa fa-caret-down"></span> <em>read more ..</em>
                             </div>
                             <div style="display:none;" id="${project.id}ReadMore">
