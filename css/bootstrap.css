@@ -2954,14 +2954,13 @@ fieldset:disabled a.btn {
 
 .btn-outline-info {
   color: #052e37;
-  background-color: #bfce40;
   border-color: #bfce40;
 }
 
 .btn-outline-info:hover {
   color: #fff;
-  background-color: #052e37;
-  border-color: #052e37;
+  background-color: #bfce40;
+  border-color: #bfce40;
 }
 
 .btn-outline-info:focus, .btn-outline-info.focus {
