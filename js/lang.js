@@ -64,13 +64,13 @@ var lang = {
             id: 'GeologicTimeScale',
             image: 'time.png',
             name: 'Zeitskala',
-            desc: 'Das Projekt Geologische Zeitskala umfasst chronostratigraphische und geochronologische Einheiten der &quot;Internationalen Stratigraphischen Tabelle&quot; (2013), der Internationalen Stratigraphischen Kommission sowie deren deutsche &Uuml;bersetzung, wie sie von der &Ouml;sterreichischen Stratigraphischen Kommission verwendet werden. Dar&uuml;ber hinaus sind sowohl die Stufengliederung der Paratethys als auch informelle Einheiten codiert, gegliedert in historische und regional verwendete Einheiten. Neben einer mono-hierarchischen Gliederung sind auch nicht-hierarchische Verwandtschaftsbeziehungen, z.B. zwischen Einheiten der Internationalen Stratigraphischen Tabelle und informellen Einheiten, formalisiert.'
+            desc: 'Das Projekt Geologische Zeitskala umfasst chronostratigraphische und geochronologische Einheiten der Internationalen Stratigraphischen Tabelle, der Internationalen Stratigraphischen Kommission sowie deren deutsche &Uuml;bersetzung, wie sie von der &Ouml;sterreichischen Stratigraphischen Kommission verwendet werden. Dar&uuml;ber hinaus sind sowohl die Stufengliederung der Paratethys als auch informelle Einheiten codiert, gegliedert in historische und regional verwendete Einheiten.'
         };
         this.lithologyDesc = {
             id: 'lithology',
             image: 'granit.png',
             name: 'Lithologie',
-            desc: 'Das Thema Lithologie umfasst Locker- und Festgesteine, die nach ihrer modalen Zusammensetzung bzw. deren Korngr&ouml;&szlig;en klassifiziert werden. Die Klassifikation von magmatischen und polygenetischen Gesteinen, Metamorphiten und St&ouml;rungsgesteinen ist stark an die IUGS-Empfehlungen der Subkommission f&uuml;r die Systematik von magmatischen bzw. metamorphen Gesteinen angepasst; f&uuml;r sediment&auml;re Locker- und Festgesteine wurde auf g&auml;ngige internationale Standards zur&uuml;ckgegriffen.'
+            desc: 'Das Thema Lithologie umfasst Locker- und Festgesteine, die nach ihrer modalen Zusammensetzung bzw. deren Korngr&ouml;&szlig;en klassifiziert werden. Die Klassifikation von magmatischen und polygenetischen Gesteinen, Metamorphiten und St&ouml;rungsgesteinen ist stark an die IUGS-Empfehlungen der Subkommission f&uuml;r die Systematik von magmatischen bzw. metamorphen Gesteinen angepasst. Die Klassifizierung der sediment&auml;ren Locker- und Festgesteine erfolgte auf der Grundlage der Korngr&ouml;&szlig;enklassifikation und, soweit nicht anwendbar, auf der Grundlage gemeinsamer internationaler Richtlinien.'
         };
         this.tectonicunitDesc = {
             id: 'tectonicunit',
@@ -147,13 +147,13 @@ var lang = {
             id: 'GeologicTimeScale',
             image: 'time.png',
             name: 'Geologic Time Scale ',
-            desc: 'The theme Geologic Time Scale covers chronostratigraphic and geochronologic Units of the International Stratigraphic Chart with a German translation based on the use by the Austrian Stratigraphic Commission. In addition the stages of the Paratethys as well as informal Units are structured in historic and regional concept schemes. Next to a mono-hierarchical structuring of individual micro-thesauri, non-hierarchical association relations between concepts of individual micro-thesauri are formalized.'
+            desc: 'The theme Geologic Time Scale covers chronostratigraphic and geochronologic Units of the International Stratigraphic Chart with a German translation based on the use by the Austrian Stratigraphic Commission. In addition the stages of the Paratethys as well as informal Units are structured in historic and regional concept schemes.'
         };
         this.lithologyDesc = {
             id: 'lithology',
             image: 'granit.png',
             name: 'Lithology',
-            desc: 'The theme Lithology comprises loose- and bed-rock, that were classified according to their modal composition or their grain size, respectively. The classification of magmatic-, polygenetic-, metamorphic- and fault-rocks are based on the IUGS recommendations by the sub-commissions for magmatic and metamorphic rocks, respectively. For sedimentary rocks the classifications were reverted to international standards.'
+            desc: 'The theme Lithology comprises loose- and bed-rock, that were classified according to their modal composition or their grain size, respectively. The classification of magmatic-, polygenetic-, metamorphic- and fault-rocks are based on the IUGS recommendations by the sub-commissions for magmatic and metamorphic rocks, respectively. The classification of sedimentary unconsolidated and solid rocks was based on the grain size classification and, where not applicable, on common international standards.'
         };
         this.tectonicunitDesc = {
             id: 'tectonicunit',
