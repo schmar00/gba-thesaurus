@@ -9,7 +9,7 @@ body {
 
 
 a:not(.nav-link):not(.btn):not(.datatype) {
-    color: #069;
+    color: #052E37;
     text-decoration: none;
     border-bottom: 1px dotted #777;
 }
@@ -27,16 +27,16 @@ a:hover {
 }
 
 .bg-info {
-    background: #0099cc;
+    background: #052E37;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0099cc, #0088bb);
+    background: -webkit-linear-gradient(to right, #095769, #052E37);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0099cc, #0088bb);
+    background: linear-gradient(to right, #095769, #052E37);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .bg-dark {
-    background: #111 !important;
+    background: #052E37 !important;
 }
 
 #searchCard {
@@ -130,12 +130,12 @@ ul {
 
 .searchResultURI {
     font-size: small;
-    color: #069;
+    color: #052E37;
     font-weight: 500;
 }
 
 #uri {
-    color: #069;
+    color: #052E37;
     font-weight: 500;
 }
 
