@@ -14,7 +14,7 @@ var lang = {
         this.LABEL_DISCLAIMER = 'Haftungsausschluss';
         this.LABEL_SERVICES = 'Services';
         this.LABEL_CONTACT = 'Kontakt';
-        this.LABEL_SEARCH = 'thesaurus';
+        this.LABEL_SEARCH = 'Suche';
         this.TIP_SEARCH = 'Suchen...';
         this.TITLE_SEARCHRESULTS = 'Suchergebnisse';
         this.HITS_SEARCHRESULTS = '0 Treffer zu ';
@@ -32,8 +32,8 @@ var lang = {
         this.visualization_H = 'Grafische Darstellung';
         this.location_H = 'Ortsbezug';
         this.creator_H = 'Bearbeitung';
-        this.TITLE_THES_2 = 'ein kontrolliertes Vokabular geowissenschaftlicher Begriffe';
-        this.DESC_THESAURUS = '..zweisprachig (Deutsch, Englisch), wie sie in den Textpublikationen und Karten der GeoSphere Austria verwendet werden<br>..entworfen als Wissensrepr&auml;sentation der GeoSphere Austria, im Gegensatz zu nationalen und internationalen Standards, Klassifikationen oder Lexika<br>..formatiert als <a href="http://www.w3.org/2004/02/skos/" title="SKOS Simple Knowledge Organization System" target="_blank">SKOS</a> Konzepte (Begriffe, einschlie&szlig;lich Synonyme), mit eigenen Web-Adressen &#8594; <a href="http://de.wikipedia.org/wiki/Uniform_Resource_Identifier" title="URI Uniform Resource Identifier" target="_blank">URI\'s</a><br>..definiert durch polyhierarchische Beziehungen als &uuml;ber-, untergeordnete, und verwandte Konzepte innerhalb eines Themenbereichs, mit Beschreibungen und Quellenangabe &#8594; <a href="bibl_res.html" target="_blank">Literaturverzeichnis</a>';
+        this.TITLE_THES_2 = 'GeoSphere Austria Thesaurus';
+        this.DESC_THESAURUS = '.. ein kontrolliertes Vokabular geowissenschaftlicher Begriffe, zweisprachig (Deutsch, Englisch), wie sie <br>in den Textpublikationen und Karten der GeoSphere Austria verwendet werden<br>..entworfen als Wissensrepr&auml;sentation der GeoSphere Austria, im Gegensatz zu nationalen und internationalen Standards, Klassifikationen oder Lexika<br>..formatiert als <a href="http://www.w3.org/2004/02/skos/" title="SKOS Simple Knowledge Organization System" target="_blank">SKOS</a> Konzepte (Begriffe, einschlie&szlig;lich Synonyme), mit eigenen Web-Adressen &#8594; <a href="http://de.wikipedia.org/wiki/Uniform_Resource_Identifier" title="URI Uniform Resource Identifier" target="_blank">URI\'s</a><br>..definiert durch polyhierarchische Beziehungen als &uuml;ber-, untergeordnete, und verwandte Konzepte innerhalb eines Themenbereichs, mit Beschreibungen und Quellenangabe &#8594; <a href="bibl_res.html" target="_blank">Literaturverzeichnis</a>';
 
         //************Description Objects**************
         this.DESC_INSPIRE = {
@@ -97,7 +97,7 @@ var lang = {
         this.LABEL_DISCLAIMER = 'Disclaimer';
         this.LABEL_SERVICES = 'Services';
         this.LABEL_CONTACT = 'Contact';
-        this.LABEL_SEARCH = 'thesaurus';
+        this.LABEL_SEARCH = 'search';
         this.TIP_SEARCH = 'Search for...';
         this.TITLE_SEARCHRESULTS = 'Search results';
         this.HITS_SEARCHRESULTS = '0 results for ';
@@ -115,8 +115,8 @@ var lang = {
         this.visualization_H = 'Visualization';
         this.location_H = 'Location';
         this.creator_H = 'Editing';
-        this.TITLE_THES_2 = 'a controlled vocabulary for geosciences';
-        this.DESC_THESAURUS = '..bilingual in german and english as used in geoscientific text publications and geological maps of the GeoSphere Austria<br>..designed as a knowledge representation of the geological survey, in contrast to national and international standards, classifications or dictionaries<br>..formatted as <a href="http://www.w3.org/2004/02/skos/" title="SKOS Simple Knowledge Organization System" target="_blank">SKOS</a> concepts (terms, including synonyms), each with their own web addresses &#8594; <a href="http://en.wikipedia.org/wiki/Uniform_Resource_Identifier" title="URI Uniform Resource Identifier" target="_blank">URIs</a><br>..specified by polyhierarchical relationships as broader, narrower, and related concepts within the domain including descriptions and &#8594; <a href="bibl_res.html" target="_blank">bibliographic references</a>';
+        this.TITLE_THES_2 = 'GeoSphere Austria Thesaurus';
+        this.DESC_THESAURUS = '..a controlled vocabulary for geosciences, bilingual in german and english as used in geoscientific text publications and geological maps of the GeoSphere Austria<br>..designed as a knowledge representation of the geological survey, in contrast to national and international standards, classifications or dictionaries<br>..formatted as <a href="http://www.w3.org/2004/02/skos/" title="SKOS Simple Knowledge Organization System" target="_blank">SKOS</a> concepts (terms, including synonyms), each with their own web addresses &#8594; <a href="http://en.wikipedia.org/wiki/Uniform_Resource_Identifier" title="URI Uniform Resource Identifier" target="_blank">URIs</a><br>..specified by polyhierarchical relationships as broader, narrower, and related concepts within the domain including descriptions and &#8594; <a href="bibl_res.html" target="_blank">bibliographic references</a>';
 
         //************Description Objects**************
         this.DESC_INSPIRE = {

@@ -249,7 +249,9 @@ var page = {
     },
 
     insertPageDesc: function () {
-        $('#page_desc').append('<br><h3 style="color:#bfce40" id="title"><strong>Thesaurus</strong></h3>')
+        $('#page_desc').append(`<br>
+        
+        <span style="color:#bfce40; margin-bottom: 50px;" id="title"><i class="fa fa-share-alt"></i> <strong>gate</strong></span>`)
             .append('<h3>' + lang.TITLE_THES_2 + '</h3>')
             .append('<p>' + lang.DESC_THESAURUS + '</p>');
     },
