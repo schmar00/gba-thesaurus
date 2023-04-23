@@ -208,7 +208,7 @@ var page = {
 
                 jsonData.results.bindings.forEach(function (a) {
                     //console.log(a.topConcepts.value);
-                    $('#' + project.id + 'Card').append(a.cL.value + ':<br><a href="' + page.BASE + '?uri=' +
+                    $('#' + project.id + 'Card').append('<strong style="color:#006666;">' + a.cL.value + '</strong>' + ': <a href="' + page.BASE + '?uri=' +
                         a.topConcepts.value.split('$').join('&lang=' + lang.ID + '">').split('|').join('</a>, <a href="' + page.BASE + '?uri=') + '</a><br>');
                     //add concept schemes + topConcepts to project descriptions
                     $('#' + project.id + 'ReadMore').append('<h4>' + a.cL.value + ' (' + a.count.value +
