@@ -258,7 +258,7 @@ var page = {
 
     initApps: function (uri) {
         $('#appsCard').toggle();
-        $('#appsCard .card-header').text(lang.APPS);
+        $('#appsCard .card-header').html('<h4>' + lang.APPS + '</h4>');
         $('#appsBody1').append(`
                                         <div class="apps">
                                             <span >
