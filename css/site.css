@@ -23,15 +23,15 @@ a:hover {
 }
 
 .bg-light {
-    background-color: #f7f7f7 !important;
+    background-color: #fff !important;
 }
 
 .bg-info {
     background: #052E37;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #095769, #052E37);
+    background: -webkit-linear-gradient(to right, #BFCE40, #052E37);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #095769, #052E37);
+    background: linear-gradient(to right, #BFCE40, #052E37);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 

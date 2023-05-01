@@ -249,10 +249,8 @@ var page = {
     },
 
     insertPageDesc: function () {
-        $('#page_desc').append(`<br>
-        
-        <span style="color:#bfce40; margin-bottom: 50px;" id="title"><i class="fa fa-share-alt"></i> <strong>gate</strong></span>`)
-            .append('<h3>' + lang.TITLE_THES_2 + '</h3>')
+        $('#page_desc').append('<br><span style="font-size: 34px;">GATe - GeoSphere Austria Thesaurus</span>')
+            .append('<h3>' + lang.TITLE_THES_2 + '</h3><br>')
             .append('<p>' + lang.DESC_THESAURUS + '</p>');
     },
 
