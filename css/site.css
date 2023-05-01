@@ -326,7 +326,7 @@ figure {
 /* Solid icons get a fill */
 .resp-sharing-button__icon--solid,
 .resp-sharing-button__icon--solidcircle {
-    fill: #fff;
+    fill: #052E37;
     stroke: none
 }
 
@@ -379,7 +379,7 @@ figure {
 }
 
 .resp-sharing-button--linkedin {
-    background-color: #0077b5
+    background-color: #BFCE40
 }
 
 .resp-sharing-button--linkedin:hover {
@@ -428,7 +428,7 @@ figure {
 }
 
 .resp-sharing-button--facebook {
-    background-color: #3b5998;
+    background-color: #BFCE40;
     border-color: #3b5998;
 }
 
@@ -439,7 +439,7 @@ figure {
 }
 
 .resp-sharing-button--twitter {
-    background-color: #55acee;
+    background-color: #BFCE40;
     border-color: #55acee;
 }
 
