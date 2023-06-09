@@ -208,7 +208,7 @@ var page = {
 
                 jsonData.results.bindings.forEach(function (a) {
                     //console.log(a.topConcepts.value);
-                    $('#' + project.id + 'Card').append(a.cL.value + ':<br><a href="' + page.BASE + '?uri=' +
+                    $('#' + project.id + 'Card').append('<strong style="color:#006666;">' + a.cL.value + '</strong>' + ': <a href="' + page.BASE + '?uri=' +
                         a.topConcepts.value.split('$').join('&lang=' + lang.ID + '">').split('|').join('</a>, <a href="' + page.BASE + '?uri=') + '</a><br>');
                     //add concept schemes + topConcepts to project descriptions
                     $('#' + project.id + 'ReadMore').append('<h4>' + a.cL.value + ' (' + a.count.value +
@@ -249,19 +249,19 @@ var page = {
     },
 
     insertPageDesc: function () {
-        $('#page_desc').append('<br><h3 id="title">GBA Thesaurus</h3>')
-            .append('<h3>' + lang.TITLE_THES_2 + '</h3>')
+        $('#page_desc').append('<br><span style="font-size: 34px;">Thesaurus</span>')
+            .append('<h3>' + lang.TITLE_THES_2 + '</h3><br>')
             .append('<p>' + lang.DESC_THESAURUS + '</p>');
     },
 
     initApps: function (uri) {
         $('#appsCard').toggle();
-        $('#appsCard .card-header').text(lang.APPS);
+        $('#appsCard .card-header').html('<h4>' + lang.APPS + '</h4>');
         $('#appsBody1').append(`
                                         <div class="apps">
                                             <span >
                                                 <svg version="1.1" id="cluster" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 88 88">
-                                                    <path fill="#0099cc" d="M25.243,68.226c-7.779-0.162-10.824,1.418-12.514,6.269
+                                                    <path fill="#052E37" d="M25.243,68.226c-7.779-0.162-10.824,1.418-12.514,6.269
                                                     c-1.298,3.725-0.073,7.843,3.052,10.26c3.124,2.417,8.021,2.507,11.218,0.207c3.956-2.846,4.598-6.665,2.281-13.977
                                                     c2.695-3.676,5.439-7.419,7.67-10.462c4.344-0.346,7.912-0.63,10.76-0.856c2.77,2.229,5.328,4.29,7.639,6.15
                                                     c-3.086,9.265-1.674,15.109,4.174,18.846c5.004,3.198,11.908,2.506,16.154-1.619c4.309-4.186,5.209-10.888,2.154-16.039
