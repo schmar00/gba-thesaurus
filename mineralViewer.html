@@ -173,9 +173,11 @@
                     searchTerms.forEach(sT_part => {
                         let queryMap = `(Mineralien like '%${sT_part.join("%')or(Mineralien like '%")}%')`;
                         //console.log(queryMap);
+
+ 
                         promises.push(
                             fetch(
-                                `https://gisgba.geologie.ac.at/arcgis/rest/services/test/TEST_WFS_IRIS_Lagerstaetten_Reviere/MapServer/0/query?where=${encodeURI(queryMap)}&outFields=*&f=geojson`
+                                `https://gisgba.geologie.ac.at/arcgis/rest/services/projekte_iris/TEST_WFS_IRIS_Lagerstaetten_Reviere/MapServer/0/query?where=${encodeURI(queryMap)}&outFields=*&f=geojson`
                             )
                             .then(res => res.json())
                             .then(data => {

@@ -249,7 +249,7 @@ var page = {
     },
 
     insertPageDesc: function () {
-        $('#page_desc').append('<br><span style="font-size: 34px;">GATe - GeoSphere Austria Thesaurus</span>')
+        $('#page_desc').append('<br><span style="font-size: 34px;">Thesaurus</span>')
             .append('<h3>' + lang.TITLE_THES_2 + '</h3><br>')
             .append('<p>' + lang.DESC_THESAURUS + '</p>');
     },
