@@ -33,7 +33,7 @@ var GeoShape = {
         this.files["MultiPoint"] = new MultiPointFileGen();
         this.files["MultiLineString"] = new MultiLineStringFileGen();
         this.files["MultiPolygon"] = new MultiPolygonFileGen();
-
+        console.log(jsonObject);
         jsonObject.features.forEach(function (item, index) {
             if (item.geometry) this.files[item.geometry.type].process(item); else if (item.geometries) {
                 //GeometryCollection
